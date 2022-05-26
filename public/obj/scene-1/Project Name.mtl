@@ -1,0 +1,19 @@
+newmtl Phoenix 1_34575c99-9d5a-441f-8fa1-38dc11036398
+Kd 0.937 0.937 0.937
+d 1.000
+newmtl Nemo_c88732b3-d64b-4e44-8bd8-ea2663c470ca
+Kd 1.000 1.000 1.000
+d 1.000
+newmtl Material 71_fbaec009-d977-4811-b4da-c68ae88eecd8
+Kd 0.000 0.000 0.000
+d 1.000
+newmtl Solar_59257d70-b6ac-42a8-b102-dbc7b2dcfe28
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd Linear_Gradient_Texture.jpg
+newmtl Phoenix_36244d63-28e2-48fd-be4a-c22d125dd90e
+Kd 0.937 0.937 0.937
+d 1.000
+newmtl Clouds_d707e350-1b19-44bb-938d-3f9126820a03
+Kd 1.000 1.000 1.000
+d 1.000

@@ -16,8 +16,9 @@ export default class Navbar extends Component {
                             <rect x="1" y="9" width="14" height="1.5" rx="1" fill="#737dff"></rect>
                         </svg>
                     </button>
-                    <Link to={"/"} className="navbar-brand">
-                        <img src={"/img/dpacks-nav.png"} alt={"dpacks logo"} className={"nav-logo nav-logo-filter"}/>
+                    <Link to={"/"} className="navbar-brand con-mid">
+                        {/*<img src={"/img/dpacks-nav.png"} alt={"dpacks logo"} className={"nav-logo nav-logo-filter"}/>*/}
+                        <h3 className={"nav-name"}>satha<span style={{color: "#5765f1"}}>.</span></h3>
                     </Link>
 
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -43,7 +44,7 @@ export default class Navbar extends Component {
                             <li className="nav-item con-mid">
                                 <a href={"https://nightly.dpacks.net"} className="nav-link nav-sites-btn">
                                     <span className="sites-nav-link">
-                                        <span style={{textAlign: "left"}}>Nightly 1.0.0 - Beta</span>
+                                        <span style={{textAlign: "left"}}>Contact</span>
                                     </span>
                                 </a>
                             </li>

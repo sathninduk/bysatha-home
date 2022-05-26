@@ -13,7 +13,7 @@ class App extends Component {
     return (
         <div>
           <Navbar/>
-          <div className="container" style={{marginTop: "57px"}}>
+          <div style={{marginTop: "57px"}}>
             <Switch>
               <Route exact path={["/"]} component={Home}/>
               <Route component={NotFound}/>
