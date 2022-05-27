@@ -103,10 +103,15 @@ body {
 .nav-name, .footer-name {
     font-family: 'Panipuri', sans-serif;
     margin-bottom: 0;
+    font-size: 20px;
+}
+
+.nav-right .nav-item {
+    margin: 0 8px;
 }
 
 .nav-name {
-    color: #818181FF;
+    color: #000;
     font-size: 1.3rem;
 }
 
@@ -233,7 +238,7 @@ nav li a {
     padding: 3px 10px;
     border-radius: 5px;
     /*box-shadow: 0 0 20px rgb(0 0 0 / 4%);*/
-    color: #000;
+    color: #ffffff;
 }
 
 .footer a:hover {
@@ -473,8 +478,7 @@ nav li a {
     color: #838383;
     padding-top: 0;
     margin: 0 0 30px 0;
-    text-align: left;
-    display: none;
+    text-align: center;
 }
 
 iframe .watermark {
@@ -578,10 +582,23 @@ iframe .watermark {
     left: 0;
 
     /* 2 */
-    height: 200px;
+    /*height: 200px;*/
+}
+
+.footer-img {
+    position: absolute;
+    margin-top: -315px;
+    z-index: -1;
+    height: 400px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position-y: -20px;
+    background-position-y: 0px;
+    background-position-x: center;
+}
+
+.footer-whatever {
+    font-size: 1.2rem;
 }
 
 .explore h1 {
