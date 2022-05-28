@@ -14,10 +14,8 @@ export default class Terms extends Component {
                     <div align="center" style={{textAlign: 'left', lineHeight: 1}}>
                         <div align="center" className="MsoNormal" style={{textAlign: 'left', lineHeight: '150%'}}>
                             <div align="center" className="MsoNormal" style={{textAlign: 'center', lineHeight: '150%'}}>
-                                <a name="_2cipo4yr3w5d"/>
                                 <div align="center" className="MsoNormal" style={{lineHeight: '22.5px'}}>
-                                    <div align="center" className="MsoNormal" style={{lineHeight: '150%'}}><a
-                                        name="_gm5sejt4p02f"/>
+                                    <div align="center" className="MsoNormal" style={{lineHeight: '150%'}}>
                                         <div align="center" className="MsoNormal" data-custom-class="title"
                                              style={{textAlign: 'left', lineHeight: '1.5'}}><strong><span
                                             style={{lineHeight: '22.5px', fontSize: '26px'}}><bdt
@@ -25,7 +23,7 @@ export default class Terms extends Component {
                                             className="question">TERMS AND CONDITIONS</bdt><bdt
                                             className="statement-end-if-in-editor"/></span></strong></div>
                                         <div align="center" className="MsoNormal"
-                                             style={{lineHeight: '22.5px', textAlign: 'left'}}><a name="_7m5b3xg56u7y"/>
+                                             style={{lineHeight: '22.5px', textAlign: 'left'}}>
                                         </div>
                                         <div align="center" className="MsoNormal" data-custom-class="subtitle"
                                              style={{textAlign: 'left', lineHeight: '22.5px'}}><br/></div>
@@ -124,9 +122,9 @@ export default class Terms extends Component {
                                     data-type="conditional-block"><bdt className="block-component"
                                                                        data-record-question-key="privacy_policy_option"
                                                                        data-type="statement"><span
-                                    style={{fontSize: '15px'}}/></bdt></bdt></bdt>10. PRIVACY POLICY</span></a><a
-                                    data-custom-class="link" href="#advertisers"/><a data-custom-class="link"
-                                                                                     href="#agreement"><span
+                                    style={{fontSize: '15px'}}/></bdt></bdt></bdt>10. PRIVACY POLICY</span></a>
+                                    <a data-custom-class="link" href="#agreement">
+                                        <span
                                     style={{color: 'rgb(89, 89, 89)'}}><bdt className="statement-end-if-in-editor"
                                                                             data-type="close"><span
                                     style={{fontSize: '15px'}}><bdt className="block-container if" data-type="if"
@@ -135,8 +133,7 @@ export default class Terms extends Component {
                                                                        data-record-question-key="privacy_policy_followup"
                                                                        data-type="statement"
                                                                        style={{fontSize: '14.6667px'}}><span
-                                    style={{fontSize: '15px'}}/></bdt></bdt></bdt></span></bdt></span></a><a
-                                    data-custom-class="link" href="#privacypolicy"/></span></div>
+                                    style={{fontSize: '15px'}}/></bdt></bdt></bdt></span></bdt></span></a></span></div>
                                 <div style={{lineHeight: '1.5', textAlign: 'left'}}><span style={{fontSize: '15px'}}><a
                                     data-custom-class="link" href="#dmca"><span style={{color: 'rgb(89, 89, 89)'}}><bdt
                                     className="block-component"><bdt
@@ -156,8 +153,7 @@ export default class Terms extends Component {
                                     </bdt>
                                     <bdt className="block-component"/>
                                 </div>
-                                <div style={{lineHeight: '1.5', textAlign: 'left'}}><span style={{fontSize: '15px'}}><a
-                                    data-custom-class="link" href="#terms"/><a data-custom-class="link"
+                                <div style={{lineHeight: '1.5', textAlign: 'left'}}><span style={{fontSize: '15px'}}><a data-custom-class="link"
                                                                                href="#terms"><span
                                     style={{color: 'rgb(89, 89, 89)'}}>11. TERM AND TERMINATION</span></a></span></div>
                                 <div style={{lineHeight: '1.5', textAlign: 'left'}}><span style={{fontSize: '15px'}}><a
@@ -212,7 +208,7 @@ export default class Terms extends Component {
                                 <div style={{lineHeight: '1.5', textAlign: 'left'}}><br/></div>
                             </div>
                             <div className="MsoNormal" data-custom-class="heading_1" id="agreement"
-                                 style={{lineHeight: '115%'}}><a name="_a7mwfgcrtsqn"/><strong><span
+                                 style={{lineHeight: '115%'}}><strong><span
                                 style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}>1. AGREEMENT TO TERMS</span></strong>
                             </div>
                         </div>
@@ -234,7 +230,7 @@ export default class Terms extends Component {
                                 className="statement-end-if-in-editor"/>," “<strong>we</strong>," “<strong>us</strong>," or “<strong>our</strong>”), concerning your access to and use of the <bdt
                                 className="block-container question question-in-editor"
                                 data-id="92c3b320-1d8b-c74c-db68-d12810736807" data-type="question"><a
-                                href="https://bysatha.com" target="_blank"
+                                href="https://bysatha.com" rel="noreferrer" target="_blank"
                                 data-custom-class="link">https://bysatha.com</a></bdt> website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).<span
                                 style={{
                                     fontSize: '11.0px',
@@ -408,7 +404,7 @@ export default class Terms extends Component {
                         <div align="center" className="MsoNormal" style={{textAlign: 'left', lineHeight: '150%'}}>
                             <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                             <div className="MsoNormal" data-custom-class="heading_1" id="ip"
-                                 style={{lineHeight: '1.5'}}><a name="_4rd71iod99ud"/><strong><span
+                                 style={{lineHeight: '1.5'}}><strong><span
                                 style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                 style={{
                                     lineHeight: '115%',
@@ -461,7 +457,7 @@ export default class Terms extends Component {
                         <div align="center" className="MsoNormal" style={{textAlign: 'left', lineHeight: '150%'}}>
                             <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                             <div className="MsoNormal" data-custom-class="heading_1" id="userreps"
-                                 style={{lineHeight: '1.5'}}><a name="_vhkegautf00d"/><strong><span
+                                 style={{lineHeight: '1.5'}}><strong><span
                                 style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                 style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                 style={{
@@ -522,13 +518,13 @@ export default class Terms extends Component {
                         </div>
                         <div align="center" className="MsoNormal" style={{textAlign: 'left', lineHeight: '150%'}}>
                             <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
-                            <div className="MsoNormal" style={{lineHeight: 1}}><a name="_esuoutkhaf53"/>
+                            <div className="MsoNormal" style={{lineHeight: 1}}>
                                 <bdt data-type="conditional-block">
                                     <bdt className="block-component" data-record-question-key="user_account_option"
                                          data-type="statement"><span style={{fontSize: '15px'}}/></bdt>
                                 </bdt>
                             </div>
-                            <div className="MsoNormal" style={{lineHeight: '115%'}}><a name="_1voziltdxegg"/>
+                            <div className="MsoNormal" style={{lineHeight: '115%'}}>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="prohibited"
                                      style={{lineHeight: '17.25px'}}><strong><span
                                     style={{lineHeight: '24.5333px', fontSize: '19px'}}><strong><span
@@ -1511,8 +1507,7 @@ export default class Terms extends Component {
                                             className="block-component"/><bdt className="block-component"/><bdt
                                             className="forloop-component"/></span></li>
                                     </ul>
-                                    <div className="MsoNormal" style={{textAlign: 'left', lineHeight: '1.5'}}><a
-                                        name="_zbbv9tgty199"/></div>
+                                    <div className="MsoNormal" style={{textAlign: 'left', lineHeight: '1.5'}}></div>
                                 </div>
                                 <div className="MsoNormal" style={{textAlign: 'justify', lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" style={{textAlign: 'justify', lineHeight: '1.5'}}><br/></div>
@@ -1690,8 +1685,7 @@ export default class Terms extends Component {
                                     </bdt>
                                 </div>
                             </div>
-                            <div className="MsoNormal" style={{lineHeight: '115%'}}><span style={{fontSize: '15px'}}><a
-                                name="_6nl7u6ag6use"/></span></div>
+                            <div className="MsoNormal" style={{lineHeight: '115%'}}><span style={{fontSize: '15px'}}></span></div>
                             <bdt className="block-container if" data-type="if"
                                  id="c954892f-02b9-c743-d1e8-faf0d59a4b70">
                                 <bdt data-type="conditional-block">
@@ -1756,8 +1750,7 @@ export default class Terms extends Component {
                         <div align="center"><span style={{fontSize: '15px'}}><bdt
                             className="statement-end-if-in-editor"/></span></div>
                         <div align="center" style={{textAlign: 'left', lineHeight: 1}}>
-                            <div className="MsoNormal" style={{lineHeight: '115%'}}><span style={{fontSize: '15px'}}><a
-                                name="_29ce8o9pbtmi"/></span></div>
+                            <div className="MsoNormal" style={{lineHeight: '115%'}}><span style={{fontSize: '15px'}}></span></div>
                             <bdt className="block-container if" data-type="if"
                                  id="14038561-dad7-be9d-370f-f8aa487b2570">
                                 <bdt data-type="conditional-block">
@@ -1765,7 +1758,7 @@ export default class Terms extends Component {
                                          data-type="statement"><span style={{fontSize: '15px'}}/></bdt>
                                 </bdt>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="sitemanage"
-                                     style={{lineHeight: '115%'}}><a name="_wj13r09u8u3u"/><strong><span
+                                     style={{lineHeight: '115%'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -1802,7 +1795,7 @@ export default class Terms extends Component {
                         <div align="center" style={{textAlign: 'left', lineHeight: '1.5'}}><br/></div>
                         <div align="center" style={{textAlign: 'left', lineHeight: '1.5'}}>
                             <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
-                            <div className="MsoNormal" style={{lineHeight: '1.5'}}><a name="_jugvcvcw0oj9"/></div>
+                            <div className="MsoNormal" style={{lineHeight: '1.5'}}></div>
                             <bdt className="block-container if" data-type="if"
                                  id="bdd90fa9-e664-7d0b-c352-2b8e77dd3bb4">
                                 <bdt data-type="conditional-block">
@@ -1833,7 +1826,7 @@ export default class Terms extends Component {
                                             style={{color: 'rgb(89, 89, 89)', fontSize: '14.6667px'}}>&nbsp;
                                             <bdt className="block-container question question-in-editor"
                                                  data-id="d10c7fd7-0685-12ac-c717-cbc45ff916d1" data-type="question"><a
-                                                href="https://bysatha.com/privacy" target="_blank"
+                                                href="https://bysatha.com/privacy" rel="noreferrer" target="_blank"
                                                 data-custom-class="link">https://bysatha.com/privacy</a></bdt>
                                         </b><span style={{
                                             color: 'rgb(89, 89, 89)',
@@ -1896,8 +1889,7 @@ export default class Terms extends Component {
                                     </bdt>
                                 </bdt>
                             </div>
-                            <div className="MsoNormal" style={{lineHeight: '115%'}}><span style={{fontSize: '15px'}}><a
-                                name="_n081pott8yce"/></span></div>
+                            <div className="MsoNormal" style={{lineHeight: '115%'}}><span style={{fontSize: '15px'}}></span></div>
                             <bdt className="block-component">
                                 <bdt className="block-component"/>
                             </bdt>
@@ -1907,8 +1899,7 @@ export default class Terms extends Component {
                                         style={{fontSize: '15px'}}/></bdt>
                                 </bdt>
                             </bdt>
-                            <div className="MsoNormal" style={{lineHeight: 1}}><span style={{fontSize: '15px'}}><a
-                                name="_sg28ikxq3swh"/></span>
+                            <div className="MsoNormal" style={{lineHeight: 1}}><span style={{fontSize: '15px'}}></span>
                                 <bdt className="block-component">
                                     <bdt className="block-component"/>
                                 </bdt>
@@ -1920,7 +1911,7 @@ export default class Terms extends Component {
                             </div>
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="terms"
-                                     style={{lineHeight: '115%'}}><a name="_k3mndam4w6w1"/><strong><span
+                                     style={{lineHeight: '115%'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -1967,7 +1958,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="modifications"
-                                     style={{lineHeight: '1.5'}}><a name="_e2dep1hfgltt"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial'}}><span
                                     style={{fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
@@ -2016,7 +2007,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="law"
-                                     style={{lineHeight: '1.5'}}><a name="_p6vbf8atcwhs"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial'}}><span
                                     style={{fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
@@ -2074,7 +2065,7 @@ export default class Terms extends Component {
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="disputes"
-                                     style={{lineHeight: '1.5'}}><a name="_v5i5tjw62cyw"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
@@ -2125,8 +2116,7 @@ export default class Terms extends Component {
                                         <bdt data-type="conditional-block">
                                             <bdt data-type="body">
                                                 <div className="MsoNormal" data-custom-class="heading_2"
-                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><a
-                                                    name="_p2enhfx5sw3j"/><strong>Binding Arbitration</strong></div>
+                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><strong>Binding Arbitration</strong></div>
                                             </bdt>
                                         </bdt>
                                     </bdt>
@@ -2188,8 +2178,7 @@ export default class Terms extends Component {
                                                     .
                                                 </div>
                                                 <div className="MsoNormal"
-                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><a
-                                                    name="_xl7dsk6ndrpp"/></div>
+                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}></div>
                                             </bdt>
                                         </bdt>
                                     </bdt>
@@ -2203,8 +2192,7 @@ export default class Terms extends Component {
                                         <bdt data-type="conditional-block">
                                             <bdt data-type="body">
                                                 <div className="MsoNormal" data-custom-class="heading_2"
-                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><a
-                                                    name="_inlv5c77dhih"/><strong>Restrictions</strong></div>
+                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><strong>Restrictions</strong></div>
                                             </bdt>
                                         </bdt>
                                     </bdt>
@@ -2231,8 +2219,7 @@ export default class Terms extends Component {
                                         <bdt data-type="conditional-block">
                                             <bdt data-type="body">
                                                 <div className="MsoNormal" data-custom-class="heading_2"
-                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><a
-                                                    name="_mdjlt1af25uq"/><strong>Exceptions to Informal Negotiations
+                                                     style={{lineHeight: '17.25px', textAlign: 'left'}}><strong>Exceptions to Informal Negotiations
                                                     and Arbitration</strong></div>
                                             </bdt>
                                         </bdt>
@@ -2263,7 +2250,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="corrections"
-                                     style={{lineHeight: '1.5'}}><a name="_mjgzo07ttzx5"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -2293,7 +2280,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="disclaimer"
-                                     style={{lineHeight: '1.5'}}><a name="_gvi74blrahf9"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -2343,7 +2330,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="liability"
-                                     style={{lineHeight: '1.5'}}><a name="_4pjah3d0455q"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}>17.&nbsp;</span></strong></span></strong>LIMITATIONS OF LIABILITY</span></strong>
@@ -2370,7 +2357,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="indemnification"
-                                     style={{lineHeight: '1.5'}}><a name="_k5ap68aj1dd4"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -2408,7 +2395,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="userdata"
-                                     style={{lineHeight: '1.5'}}><a name="_ftgg17oha0ep"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
@@ -2442,7 +2429,7 @@ export default class Terms extends Component {
                             <div align="center" style={{textAlign: 'left'}}>
                                 <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="electronic"
-                                     style={{lineHeight: '1.5'}}><a name="_dkovrslqodui"/><strong><span
+                                     style={{lineHeight: '1.5'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -2475,7 +2462,7 @@ export default class Terms extends Component {
                                     msoThemetint: 166
                                 }}><bdt className="block-component"/></span></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="california"
-                                     style={{lineHeight: '115%'}}><a name="_cem9cu2usl7k"/><strong><span
+                                     style={{lineHeight: '115%'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}>21.&nbsp;</span></strong></span></strong>CALIFORNIA USERS AND RESIDENTS</span></strong>
@@ -2515,7 +2502,7 @@ export default class Terms extends Component {
                                     msoThemetint: 166
                                 }}><bdt className="statement-end-if-in-editor"/></span></span></div>
                                 <div className="MsoNormal" data-custom-class="heading_1" id="misc"
-                                     style={{lineHeight: '115%'}}><a name="_d4jvmcnxg0wt"/><strong><span
+                                     style={{lineHeight: '115%'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}><strong><span
                                     style={{
@@ -2548,7 +2535,7 @@ export default class Terms extends Component {
                                 <div align="center" style={{textAlign: 'left'}}>
                                     <div className="MsoNormal" style={{lineHeight: '1.5'}}><br/></div>
                                     <div className="MsoNormal" data-custom-class="heading_1" id="contact"
-                                         style={{lineHeight: '1.5'}}><a name="_t4pq5cwn486q"/><strong><span
+                                         style={{lineHeight: '1.5'}}><strong><span
                                         style={{lineHeight: '115%', fontFamily: 'Arial'}}><span
                                         style={{fontSize: '19px'}}><strong><span style={{
                                         lineHeight: '115%',

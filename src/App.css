@@ -78,14 +78,14 @@ body {
 .con-end {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .con-left-mid {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     text-align: right;
 }
 
@@ -93,7 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     text-align: left;
 }
 
@@ -369,7 +369,7 @@ nav li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     text-align: right;
     border-right: 5px solid #5765f1;
     padding-right: 50px;
@@ -994,8 +994,8 @@ nav svg:hover {
     .about-planet-div {
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        align-items: end;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 }
 
