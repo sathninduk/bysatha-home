@@ -4,92 +4,20 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                {/*<div className={"home-hero-bg-div"}>*/}
-                {/*<div className={"home-hero-bg home-hero-bg-1"}></div>*/}
-                {/*<div className={"home-hero-bg home-hero-bg-2"}></div>*/}
-                {/*<div className={"home-hero-bg home-hero-bg-3"}></div>*/}
-                {/*</div>*/}
                 <div className={"main-section con-mid"}>
                     <div className="container">
                         <div className={"hero"}>
-                            {/*<img alt={"satha"} className={"main-image"} src={"/img/satha-main.jpg"}/>*/}
+
                             <div className="row pc-hero-header">
                                 <div className={"col con-left-mid"}>
-
                                     <div className={"row"}>
-
-
                                         <div className={"col-lg"}>
                                             <h1 className={"panipuri main-heading"}>satha<span
                                                 style={{color: "#fff"}}>.</span></h1>
-                                            {/*<p className="full-name">NILVIN SATHNINDU KOTTAGE</p>*/}
-
                                         </div>
-
-
-                                        {/*<div className={"col-lg con-mid"}>*/}
-                                        {/*    <div className={"row social-icon-row"}>*/}
-                                        {/*        <div className={"col con-mid social-icon"}>*/}
-                                        {/*            <svg*/}
-                                        {/*                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"*/}
-                                        {/*                focusable="false" aria-hidden="true" viewBox="0 0 24 24"*/}
-                                        {/*                height={"20"} width={"20"} fill={"#8a8a8a"}*/}
-                                        {/*                data-testid="TwitterIcon" tabIndex="-1" title="Twitter">*/}
-                                        {/*                <path*/}
-                                        {/*                    d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path>*/}
-                                        {/*            </svg>*/}
-                                        {/*        </div>*/}
-                                        {/*        <div className={"col con-mid social-icon"}>*/}
-                                        {/*            <svg*/}
-                                        {/*                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"*/}
-                                        {/*                focusable="false" aria-hidden="true" viewBox="0 0 24 24"*/}
-                                        {/*                height={"20"} width={"20"} fill={"#8a8a8a"}*/}
-                                        {/*                data-testid="LinkedInIcon" tabIndex="-1" title="LinkedIn">*/}
-                                        {/*                <path*/}
-                                        {/*                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>*/}
-                                        {/*            </svg>*/}
-                                        {/*        </div>*/}
-                                        {/*        <div className={"col con-mid social-icon"}>*/}
-                                        {/*            <svg*/}
-                                        {/*                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"*/}
-                                        {/*                focusable="false" aria-hidden="true" viewBox="0 0 24 24"*/}
-                                        {/*                height={"20"} width={"20"} fill={"#8a8a8a"}*/}
-                                        {/*                data-testid="WhatsAppIcon" tabIndex="-1" title="WhatsApp">*/}
-                                        {/*                <path*/}
-                                        {/*                    d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>*/}
-                                        {/*            </svg>*/}
-                                        {/*        </div>*/}
-                                        {/*        <div className={"col con-mid social-icon"}>*/}
-                                        {/*            <svg*/}
-                                        {/*                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"*/}
-                                        {/*                focusable="false" aria-hidden="true" viewBox="0 0 24 24"*/}
-                                        {/*                height={"20"} width={"20"} fill={"#8a8a8a"}*/}
-                                        {/*                data-testid="EmailIcon" tabIndex="-1" title="Email">*/}
-                                        {/*                <path*/}
-                                        {/*                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>*/}
-                                        {/*            </svg>*/}
-                                        {/*        </div>*/}
-                                        {/*        <div className={"col con-mid social-icon"}>*/}
-                                        {/*            <svg*/}
-                                        {/*                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"*/}
-                                        {/*                focusable="false" aria-hidden="true" viewBox="0 0 24 24"*/}
-                                        {/*                height={"20"} width={"20"} fill={"#8a8a8a"}*/}
-                                        {/*                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">*/}
-                                        {/*                <path*/}
-                                        {/*                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>*/}
-                                        {/*            </svg>*/}
-                                        {/*        </div>*/}
-                                        {/*    </div>*/}
-                                        {/*</div>*/}
-
-
                                     </div>
-
                                 </div>
                                 <div className={"col con-mid"}>
-                                    {/*<img src={"/img/dpacks-logo.png"} className={"hero-logo"} alt={"dpacks logo"}/>*/}
-                                    {/*<iframe src="https://app.vectary.com/p/3xxdo1svduQi5RYe24urpc" frameBorder="0"*/}
-                                    {/*        width="100%" height="100%"></iframe>*/}
                                     <iframe src="https://app.vectary.com/p/59bLkVteTnRk323UayVZho" frameBorder="0"
                                             width="100%" height="480"></iframe>
                                 </div>
@@ -100,7 +28,7 @@ export default class Home extends Component {
                                         and <span className={"panipuri"}>solutions</span>
                                     </h1>
                                     <h3>
-                                        for computer science & engineering.
+                                        for computer science & engineering 😎
                                     </h3>
 
                                     <br/>
@@ -108,20 +36,44 @@ export default class Home extends Component {
                                 </div>
                             </div>
 
-                            <div className="row mob-hero-header">
-                                <div className={"col-lg"}>
-                                    <img src={"/img/dpacks-logo.png"} className={"hero-logo"} alt={"dpacks logo"}/>
+                            <div className={"mob-planet-bg con-right-mid"}>
+                                <div className={"mobile-main-planet mobile-planet"}>
+                                    {/*<iframe src="https://app.vectary.com/p/59bLkVteTnRk323UayVZho" frameBorder="0"*/}
+                                    {/*        width="100%" height="480px"></iframe>*/}
+                                    <img src={"/img/homepage/main-planet.png"} height="480px"
+                                         alt={"main-planet"}/>
                                 </div>
-                                <div className={"col-lg"}>
-                                    <h1 className={"hero-title"}>
-                                        a <span style={{color: "#5765f1"}}>biological intelligence</span>
-                                        <br/>
-                                        with crazy ideas
-                                        and solutions
-                                        in computer science.
-                                    </h1>
+                                <div className={"mobile-main-planet tablet-planet"}>
+                                    <iframe src="https://app.vectary.com/p/59bLkVteTnRk323UayVZho" frameBorder="0"
+                                            width="100%" height="480px"></iframe>
+                                    {/*<img src={"/img/homepage/main-planet.png"} height="480px"*/}
+                                    {/*     alt={"main-planet"}/>*/}
                                 </div>
                             </div>
+
+                            <div className="row mob-hero-header">
+                                <div className={"col-lg con-left-mid mob-satha-text"}>
+                                    <h1 className={"panipuri main-heading"}>satha<span
+                                        style={{color: "#000"}}>.</span></h1>
+                                </div>
+                                <div className={"col-lg con-right-mid mob-biological-text"}
+                                     style={{marginTop: "100px"}}>
+                                    <h1 className={"hero-title"} style={{fontSize: "2rem"}}>
+                                        <span style={{fontSize: "1.6rem"}}>a </span><span className={"panipuri"}>biological intelligence </span>
+                                        <span style={{fontSize: "1.6rem"}}>with crazy </span><span
+                                        className={"panipuri"}>ideas </span>
+                                        <span style={{fontSize: "1.6rem"}}>and </span><span
+                                        className={"panipuri"}>solutions</span>
+                                    </h1>
+                                    <h3 style={{fontSize: "1.3rem"}}>
+                                        for computer science & engineering 😎
+                                    </h3>
+
+                                    <br/>
+                                    {/*<h1 className={"main-name"}>SATHA</h1>*/}
+                                </div>
+                            </div>
+
                         </div>
                         <div className={"explore"}>
                             <h1><span className={"explore-bg"}>&emsp;explore <span>
@@ -139,41 +91,22 @@ export default class Home extends Component {
                 {/* Section 1 */}
                 <div className={"section-me"}>
                     <div className={"container"}>
-                        {/*<div className={"title-list-div con-mid"}>*/}
-                        {/*    <p className={"title-list"}>*/}
-                        {/*        <span style={{color: "#5765f1"}}>Software Engineering</span>*/}
-                        {/*        &nbsp;|&nbsp;*/}
-                        {/*        <span style={{color: "#5765f1"}}>Full-stack Developing</span>*/}
-                        {/*        &nbsp;|&nbsp;*/}
-                        {/*        <span style={{color: "#5765f1"}}>Web Developing</span>*/}
-                        {/*        &nbsp;|&nbsp;*/}
-                        {/*        <span style={{color: "#5765f1"}}>Debugging</span>*/}
-                        {/*        &nbsp;|&nbsp;*/}
-                        {/*        <span style={{color: "#5765f1"}}>Problem Solving</span>*/}
-                        {/*        &nbsp;|&nbsp;*/}
-                        {/*        <span style={{color: "#5765f1"}}>Consulting</span>*/}
-                        {/*        &nbsp;|&nbsp;*/}
-                        {/*        <span style={{color: "#5765f1"}}>Inventing</span>*/}
-                        {/*    </p>*/}
-                        {/*</div>*/}
-
                         <div className={"row"}>
-                            <div className={"col"}>
+                            <div className={"col about-planet-div"}>
                                 <img src={"/img/homepage/satha-main.png"} className={"satha-planet"} alt={"satha"}/>
                             </div>
-                            <div className={"col"}>
+                            <div className={"col about-planet-text"}>
                                 <h1 className={"neutro"}>
                                     I'M <span className={"panipuri"}>sathnindu</span>
                                     <br/>
                                     <span className={"panipuri"}>AKA <span style={{color: "#000"}}>satha</span>.</span>
                                 </h1>
-                                <p>
-                                    a guy who solve problems scientifically with chewing a bubble gum.
-                                </p>
-                                <p>
-                                    computer science (engineer, developer, problem solver, debugger, researcher &
-                                    inventor)
-                                </p>
+                                <h3 style={{color: "#737373", marginTop: "30px", fontSize: "21px"}}>
+                                    A teen guy who scientifically solves problems by chewing bubble gums.
+                                </h3>
+                                <h3 style={{color: "#737373", fontSize: "21px"}}>
+                                    Industrial quality, modern, on-time, accuracy, security and honesty 💯
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -186,80 +119,687 @@ export default class Home extends Component {
                             {/*<h1><span className={"panipuri"}>specialised <span*/}
                             {/*    style={{color: "#000"}} className={"neutro"}>in</span></span></h1>*/}
                         </div>
-                        <div className={"row edition-list"}>
+                        <div className={"row edition-list edition-list-1 edition-list-2"}>
                             <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS</p>
-                                <p className={"edition-desc"}>Open-Source Edition</p>
-                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                    Coming Soon
-                                </p>
+                                <p className={"edition-name"}>Software Engineering</p>
+                                <p className={"edition-desc"}>Design, develop, maintain, test, and evaluate</p>
                             </div>
                             <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS PRO</p>
-                                <p className={"edition-desc"}>Centralized Premium Edition</p>
-                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                    Coming Soon
-                                </p>
+                                <p className={"edition-name"}>Full-Stack Developing</p>
+                                <p className={"edition-desc"}>Java Spring, .NET, PHP, MERN, Python Django, Ruby</p>
                             </div>
                             <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS NIGHTLY</p>
-                                <p className={"edition-desc"}>Web 3.0 Edition</p>
-                                <p className={"edition-availability-badge edition-availability-badge-green"}>
-                                    V 1.0.0 BETA
-                                </p>
+                                <p className={"edition-name"}>Web Designing</p>
+                                <p className={"edition-desc"}>General, Interactive, e-commerce, event & mission
+                                    critical</p>
                             </div>
                             <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS CORE</p>
-                                <p className={"edition-desc"}>The core technology</p>
-                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                    Coming Soon
-                                </p>
+                                <p className={"edition-name"}>Cyber Security</p>
+                                <p className={"edition-desc"}>Security analysis, White-hat hacking, Incident
+                                    investigation</p>
+                            </div>
+                            <div className={"col con-mid"}>
+                                <p className={"edition-name"}>Problem Solving</p>
+                                <p className={"edition-desc"}>System architectures & Computational mathematics</p>
+                            </div>
+                            <div className={"col con-mid"}>
+                                <p className={"edition-name"}>Debugging</p>
+                                <p className={"edition-desc"}>Deployed and developing stage systems</p>
+                            </div>
+                            <div className={"col con-mid"}>
+                                <p className={"edition-name"}>IT Consulting</p>
+                                <p className={"edition-desc"}>Computational thinking and debugging</p>
+                            </div>
+                            <div className={"col con-mid"}>
+                                <p className={"edition-name"}>Researching & Inventing</p>
+                                <p className={"edition-desc"}>Universal algorithms and computation systems</p>
+                            </div>
+                        </div>
+                        <div className={"row edition-list"} style={{marginTop: "30px"}}>
+                            <div className={"col-lg con-mid"}>
+                                <h3 className="panipuri"><span
+                                    style={{color: "rgb(68,68,68)"}}>how's my</span> creativity? 🙃</h3>
+                                <p>Likewise, all my solutions are creative.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* section 4 */}
-                <div className={"research"}>
+                <div className={"research research-projects"}>
                     <div className={"container"}>
-                        <div className={"con-mid"}>
-                            <h1><span className={"panipuri"}>research <span
-                                style={{color: "#000"}} className={"neutro"}>projects</span></span></h1>
+
+                        <div className={"list-section"} style={{marginTop: "0"}}>
+                            <div className={"con-mid"}>
+                                <h1><span className={"panipuri"}>research <span
+                                    style={{color: "#000"}} className={"neutro title-neutro"}>projects</span></span>
+                                </h1>
+                            </div>
+
+                            <div className={"project-list-section"}>
+                                <h3>Project CyberUniversal</h3>
+                                <p>(2022 - 2023)</p>
+                                <div className={"row edition-list edition-list-special"}>
+                                    <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>Dpacks</p>
+                                        <p className={"edition-desc"}>The first ever database and language exempt
+                                            post-apply
+                                            CMS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>Dpacks +</p>
+                                        <p className={"edition-desc"}>The ultimate search engine crawling technology</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>Dpacks Pro</p>
+                                        <p className={"edition-desc"}>The ultimate search engine crawling technology</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-active block-href"}
+                                       href={"https://nightly.dpacks.net"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-active"}>Production - Active
+                                        </div>
+                                        <p className={"edition-name"}>Dpacks Nightly</p>
+                                        <p className={"edition-desc"}>The first ever Web 3.0 driven CMS</p>
+                                        <p
+                                            className={"edition-availability-badge edition-availability-badge-green"}>
+                                            V 1.0.0 BETA
+                                        </p>
+                                    </a>
+                                </div>
+                                <div className={"row edition-list"}>
+                                    <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>Dpacks Core</p>
+                                        <p className={"edition-desc"}>The ultimate search engine crawling technology</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>Kelof</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className={"project-list-section"}>
+                                <h3>Project CodeBase</h3>
+                                <p>(2020 - 2021)</p>
+                                <div className={"row edition-list"}>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>nodeAuth</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>mernAuth</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>mernBase</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>mernBase</p>
+                                        <p className={"edition-desc"}>GitHub</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                </div>
+                                <div className={"row edition-list"}>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>pernBase</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>tsPern</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>tsMern</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>mernBase_graphQL</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className={"project-list-section"}>
+                                <h3>Project Evilcodes</h3>
+                                <p>(2021)</p>
+                                <div className={"row edition-list"}>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>encrig</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>efores</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/"} target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>reduza</p>
+                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project Dear Earth</h3>
+                                        <p>(2021)</p>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/"} target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>dearEarth</p>
+                                                <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project Media Real-time</h3>
+                                        <p>(2020)</p>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/"} target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>streamFig</p>
+                                                <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Miscellaneous</h3>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/"} target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>Gaserp</p>
+                                                <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/"} target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>NodeBlaze</p>
+                                                <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={"col"}>
+
+                                    <div className={"project-list-section"}>
+                                        <h3>Projected (2023) Projects</h3>
+                                        <br/>
+                                        <h5>Project CyberVerse</h5>
+                                        <p>A research to build a multi sectional cyber world.</p>
+                                        <h5>Project The WorldOnce</h5>
+                                        <p>A research to make the world's data flow realtime.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className={"row edition-list"}>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS</p>
-                                <p className={"edition-desc"}>Open-Source Edition</p>
-                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                    Coming Soon
-                                </p>
+
+
+                        {/*  organizations  */}
+                        <div className={"list-section organizations"}>
+                            <div className={"con-mid"}>
+                                <h1 style={{marginBottom: "40px", lineHeight: "2rem"}}><span
+                                    className={"panipuri"}>contributed <span
+                                    style={{color: "#000"}}
+                                    className={"neutro title-neutro-2"}>organizations</span></span></h1>
                             </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS PRO</p>
-                                <p className={"edition-desc"}>Centralized Premium Edition</p>
-                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                    Coming Soon
-                                </p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS NIGHTLY</p>
-                                <p className={"edition-desc"}>Web 3.0 Edition</p>
-                                <p className={"edition-availability-badge edition-availability-badge-green"}>
-                                    V 1.0.0 BETA
-                                </p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>DPACKS CORE</p>
-                                <p className={"edition-desc"}>The core technology</p>
-                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                    Coming Soon
-                                </p>
+                            <div className={"row edition-list"}>
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>Radiofusion Cyber Systems</p>
+                                    <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
+                                </a>
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>Coduza</p>
+                                    <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
+                                </a>
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>EvilCodes</p>
+                                    <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
+                                </a>
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>by Satha</p>
+                                    <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
+                                </a>
                             </div>
                         </div>
+
+
+                        {/*  portfolio  */}
+                        <div className={"list-section"}>
+                            <div className={"con-mid"}>
+                                <h1><span className={"panipuri"}>portfolio</span></h1>
+                            </div>
+                            <div className={"row edition-list edition-list-2"}>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>Dpacks Technology</p>
+                                    <p className={"edition-desc"}>Inventor</p>
+                                    <div className={"logo-box"}>
+                                        <img className={"org-logos"} src={"/img/homepage/logos/dpacks-logo.png"}
+                                             alt={"Dpacks Logo"}/>
+                                    </div>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>Radiofusion Cyber Systems</p>
+                                    <p className={"edition-desc"}>Founder</p>
+                                    <div className={"logo-box"}>
+                                        <img className={"org-logos"}
+                                             src={"/img/homepage/logos/radiofusion_horizontal_black.png"}
+                                             alt={"Radiofusion Logo"}/>
+                                    </div>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>Coduza</p>
+                                    <p className={"edition-desc"}>CTO & Chief Developer</p>
+                                    <div className={"logo-box-coduza"}>
+                                        <img className={"org-logos-coduza"} src={"/img/homepage/logos/coduza.png"}
+                                             alt={"Coduza Logo"}/>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        {/*  social  */}
+                        <div className={"list-section social-section"} style={{marginBottom: "30px"}}>
+                            <div className={"con-mid"}>
+                                <h1><span className={"panipuri"}>dev <span style={{color: "#000"}}>social</span></span>
+                                </h1>
+                            </div>
+                            <div className={"row edition-list edition-list-2"}>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>GitHub</p>
+                                    <a href={"https://github.com/sathninduk/nodeauth"} target={"_blank"}>Visit <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
+                                        height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
+                                        title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>Stack Overflow</p>
+                                    <a href={"https://github.com/sathninduk/nodeauth"} target={"_blank"}>Visit <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
+                                        height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
+                                        title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>Linkedin</p>
+                                    <a href={"https://github.com/sathninduk/nodeauth"} target={"_blank"}>Visit <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
+                                        height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
+                                        title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>G Developers</p>
+                                    <a href={"https://developers.google.com/profile/u/117810861260902165797"}
+                                       target={"_blank"}>Visit <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
+                                        height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
+                                        title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>HackerRank</p>
+                                    <a href={"https://www.hackerrank.com/sathnindu"} target={"_blank"}>Visit <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
+                                        height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
+                                        title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                                </a>
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/"} target={"_blank"}>
+                                    <p className={"edition-name"}>GitCoin</p>
+                                    <a href={"https://gitcoin.co/sathninduk"} target={"_blank"}>Visit <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
+                                        height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
+                                        title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        {/*  Timeline  */}
+                        <div className={"timeline-section con-mid"}>
+                            <p>
+                                1000+ GitHub Contributions (2021-2022)
+                                <br/>
+                                <a href={"https://skyline.github.com/sathninduk/2021"} target={"_blank"}>GitHub
+                                    Skyline <svg
+                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill={"#5765f1"}
+                                        height={"15"} width={"15"} data-testid="OpenInNewIcon"
+                                        tabIndex="-1" title="OpenInNew">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
+                                    </svg></a>
+                            </p>
+                            <div style={{width: "100%"}}>
+                                <img src={"/img/homepage/github-timeline.png"} className={"github-timeline"}
+                                     alt={"github timeline"}/>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                {/* section 4 */}
+                {/* section 4 */
+                }
                 <div className={"big-board-div"}>
                     <div className={"container"}>
                         <h1 className={"big-board"}>
@@ -273,13 +813,11 @@ export default class Home extends Component {
                             from the depth of its algorithm.
                         </h3>
 
-                        <div style={{transform: "rotate(-5deg)"}}>
-                            <h1 className={"big-board"}
-                                style={{textAlign: "right", fontSize: "2.5rem", color: "#5765f1"}}>
+                        <div style={{transform: "rotate(-5deg)"}} className={"contact-details"}>
+                            <h1 className={"big-board big-board-tel"}>
                                 (+94) 74 180 2242
                             </h1>
-                            <h1 className={"big-board"}
-                                style={{textAlign: "right", fontSize: "2.5rem", color: "#000000"}}>
+                            <h1 className={"big-board big-board-email"}>
                                 bysatha@gmail.com
                             </h1>
                         </div>
@@ -288,13 +826,14 @@ export default class Home extends Component {
                 </div>
 
 
-                {/* Footer 1 */}
-                {/* Section 7 */}
+                {/* Footer 1 */
+                }
+                {/* Section 7 */
+                }
                 <div style={{backgroundImage: "url('/img/homepage/footer-main.png')"}} className={"footer-img"}></div>
                 <div className={"footer"}>
                     <div
                         className={"footer-section con-end"}>
-                        {/*<img src={"/img/homepage/satha-main.png"} className={"footer-img"} alt={"footer image"}/>*/}
                         <div className={"container"}>
                             {/*<h1>Footer</h1>*/}
                             <div className={"row"}>
@@ -320,6 +859,7 @@ export default class Home extends Component {
 
 
             </div>
-        );
+        )
+            ;
     }
 }
