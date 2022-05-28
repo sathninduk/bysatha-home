@@ -1,9 +1,14 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 export default class Home extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                    <title>Satha | Computer Science & Engineering Solutions by Sathnindu Kottage</title>
+                </Helmet>
                 <div className={"main-section con-mid"}>
                     <div className="container">
                         <div className={"hero"}>
@@ -57,7 +62,7 @@ export default class Home extends Component {
                                         style={{color: "#000"}}>.</span></h1>
                                 </div>
                                 <div className={"col-lg con-right-mid mob-biological-text"}
-                                     style={{marginTop: "100px"}}>
+                                     style={{marginTop: "80px"}}>
                                     <h1 className={"hero-title"} style={{fontSize: "2rem"}}>
                                         <span style={{fontSize: "1.6rem"}}>a </span><span className={"panipuri"}>biological intelligence </span>
                                         <span style={{fontSize: "1.6rem"}}>with crazy </span><span
@@ -75,7 +80,7 @@ export default class Home extends Component {
                             </div>
 
                         </div>
-                        <div className={"explore"}>
+                        <a href={"#about"} className={"explore"}>
                             <h1><span className={"explore-bg"}>&emsp;explore <span>
                                 <svg
                                     className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
@@ -84,12 +89,12 @@ export default class Home extends Component {
                                     data-testid="ArrowCircleDownIcon" tabIndex="-1" title="ArrowCircleDown"><path
                                     d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 10V8h-2v4H8l4 4 4-4h-3z"></path></svg>
                             </span>&emsp;</span></h1>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 {/* Section 1 */}
-                <div className={"section-me"}>
+                <div className={"section-me"} id={"about"}>
                     <div className={"container"}>
                         <div className={"row"}>
                             <div className={"col about-planet-div"}>
@@ -166,7 +171,7 @@ export default class Home extends Component {
                 </div>
 
                 {/* section 4 */}
-                <div className={"research research-projects"}>
+                <div className={"research research-projects"} id={"research"}>
                     <div className={"container"}>
 
                         <div className={"list-section"} style={{marginTop: "0"}}>
@@ -201,7 +206,8 @@ export default class Home extends Component {
                                     <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks Pro</p>
-                                        <p className={"edition-desc"}>The ultimate search engine crawling technology</p>
+                                        <p className={"edition-desc"}>Centralised data variable edition of the Dpacks
+                                            technology</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             Coming Soon
                                         </p>
@@ -222,7 +228,7 @@ export default class Home extends Component {
                                     <a className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks Core</p>
-                                        <p className={"edition-desc"}>The ultimate search engine crawling technology</p>
+                                        <p className={"edition-desc"}>The core technology of Dpacks</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             Coming Soon
                                         </p>
@@ -243,10 +249,10 @@ export default class Home extends Component {
                                 <p>(2020 - 2021)</p>
                                 <div className={"row edition-list"}>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/nodeAuth"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>nodeAuth</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Open-source Node.js authentication code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -261,10 +267,11 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/mernAuth"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernAuth</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Open-source MERN stack authentication
+                                            code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -279,10 +286,10 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/nodeBase2"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
-                                        <p className={"edition-name"}>mernBase</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-name"}>nodeBase</p>
+                                        <p className={"edition-desc"}>Open-source Node.js development code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -297,10 +304,10 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/mernBase"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernBase</p>
-                                        <p className={"edition-desc"}>GitHub</p>
+                                        <p className={"edition-desc"}>Open-source MERN stack development code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -317,10 +324,10 @@ export default class Home extends Component {
                                 </div>
                                 <div className={"row edition-list"}>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/pernBase"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>pernBase</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Open-source PERN stack development code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -335,10 +342,11 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/tsPern"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>tsPern</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Open-source PERN (TypeScript) stack development
+                                            code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -353,10 +361,11 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/tsMern"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>tsMern</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Open-source MERN (TypeScript) stack development
+                                            code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -371,10 +380,11 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/coduza/mernBase_graphQL"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernBase_graphQL</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Open-source MERN stack with GraphQL development
+                                            code-base</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -396,10 +406,10 @@ export default class Home extends Component {
                                 <p>(2021)</p>
                                 <div className={"row edition-list"}>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/project-evilcodes/encrig"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>encrig</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Encrypted IPFS static storage gateway</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -414,10 +424,10 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/project-evilcodes/efores"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>efores</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>ERC-721 Non-Fungible token minting platform</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -432,10 +442,11 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/"} target={"_blank"}>
+                                       href={"https://github.com/project-evilcodes/reduza1"} target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>reduza</p>
-                                        <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                        <p className={"edition-desc"}>Project Reduza (Red) PreV1.0 - An algorithm for
+                                            self reproduction</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
@@ -459,10 +470,11 @@ export default class Home extends Component {
                                         <p>(2021)</p>
                                         <div className={"row edition-list"}>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/"} target={"_blank"}>
+                                               href={"https://github.com/radiofusion/dearEarth"} target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>dearEarth</p>
-                                                <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                                <p className={"edition-desc"}>An ML intelligence for identify earth
+                                                    pollution (NASA Hackathon 2021)</p>
                                                 <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                     <svg
                                                         style={{marginTop: "-2px"}}
@@ -486,10 +498,11 @@ export default class Home extends Component {
                                         <p>(2020)</p>
                                         <div className={"row edition-list"}>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/"} target={"_blank"}>
+                                               href={"https://github.com/sathninduk/streamfig"} target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
-                                                <p className={"edition-name"}>streamFig</p>
-                                                <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                                <p className={"edition-name"}>streamfig</p>
+                                                <p className={"edition-desc"}>Real-time streaming platform for
+                                                    unapproachable deliveries</p>
                                                 <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                     <svg
                                                         style={{marginTop: "-2px"}}
@@ -514,10 +527,11 @@ export default class Home extends Component {
                                         <h3>Miscellaneous</h3>
                                         <div className={"row edition-list"}>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/"} target={"_blank"}>
+                                               href={"https://github.com/sathninduk/gaserp"} target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>Gaserp</p>
-                                                <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                                <p className={"edition-desc"}>BA focused online delivery and ERP
+                                                    management system</p>
                                                 <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                     <svg
                                                         style={{marginTop: "-2px"}}
@@ -532,10 +546,11 @@ export default class Home extends Component {
                                                 </p>
                                             </a>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/"} target={"_blank"}>
+                                               href={"https://github.com/sathninduk/nodeblaze"} target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>NodeBlaze</p>
-                                                <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                                <p className={"edition-desc"}>An experiment for a real-time approach by
+                                                    Node.js</p>
                                                 <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                     <svg
                                                         style={{marginTop: "-2px"}}
@@ -577,10 +592,11 @@ export default class Home extends Component {
                             </div>
                             <div className={"row edition-list"}>
                                 <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://github.com/radiofusion"} target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>Radiofusion Cyber Systems</p>
-                                    <p className={"edition-desc"}>The most technically affordable IaaS</p>
+                                    <p className={"edition-desc"}>Cyber space & security research organization based in
+                                        Colombo, Sri Lanka</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
@@ -595,10 +611,10 @@ export default class Home extends Component {
                                     </p>
                                 </a>
                                 <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://github.com/coduza"} target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>Coduza</p>
-                                    <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                    <p className={"edition-desc"}>IT services provider based in Colombo, Sri Lanka</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
@@ -613,10 +629,11 @@ export default class Home extends Component {
                                     </p>
                                 </a>
                                 <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://github.com/project-evilcodes"} target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>EvilCodes</p>
-                                    <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                    <p className={"edition-desc"}>Cryptography and decentralized cyber space research
+                                        project</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
@@ -631,10 +648,10 @@ export default class Home extends Component {
                                     </p>
                                 </a>
                                 <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://github.com/bysatha"} target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>by Satha</p>
-                                    <p className={"edition-desc"}>Firebase developed real-time research</p>
+                                    <p className={"edition-desc"}>Projects by Sathnindu Kottage</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
@@ -659,7 +676,7 @@ export default class Home extends Component {
                             </div>
                             <div className={"row edition-list edition-list-2"}>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://dpacks.net/"} target={"_blank"}>
                                     <p className={"edition-name"}>Dpacks Technology</p>
                                     <p className={"edition-desc"}>Inventor</p>
                                     <div className={"logo-box"}>
@@ -668,7 +685,7 @@ export default class Home extends Component {
                                     </div>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://github.com/radiofusion"} target={"_blank"}>
                                     <p className={"edition-name"}>Radiofusion Cyber Systems</p>
                                     <p className={"edition-desc"}>Founder</p>
                                     <div className={"logo-box"}>
@@ -678,7 +695,7 @@ export default class Home extends Component {
                                     </div>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://www.coduza.com"} target={"_blank"}>
                                     <p className={"edition-name"}>Coduza</p>
                                     <p className={"edition-desc"}>CTO & Chief Developer</p>
                                     <div className={"logo-box-coduza"}>
@@ -698,9 +715,9 @@ export default class Home extends Component {
                             </div>
                             <div className={"row edition-list edition-list-2"}>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://github.com/sathninduk"} target={"_blank"}>
                                     <p className={"edition-name"}>GitHub</p>
-                                    <a href={"https://github.com/sathninduk/nodeauth"} target={"_blank"}>Visit <svg
+                                    <a href={"https://github.com/sathninduk"} target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -710,9 +727,11 @@ export default class Home extends Component {
                                     </svg></a>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://stackoverflow.com/users/15429494/sathnindu-kottage"}
+                                   target={"_blank"}>
                                     <p className={"edition-name"}>Stack Overflow</p>
-                                    <a href={"https://github.com/sathninduk/nodeauth"} target={"_blank"}>Visit <svg
+                                    <a href={"https://stackoverflow.com/users/15429494/sathnindu-kottage"}
+                                       target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -722,9 +741,9 @@ export default class Home extends Component {
                                     </svg></a>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://www.linkedin.com/in/sathnindu/"} target={"_blank"}>
                                     <p className={"edition-name"}>Linkedin</p>
-                                    <a href={"https://github.com/sathninduk/nodeauth"} target={"_blank"}>Visit <svg
+                                    <a href={"https://www.linkedin.com/in/sathnindu/"} target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -734,7 +753,8 @@ export default class Home extends Component {
                                     </svg></a>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://developers.google.com/profile/u/117810861260902165797"}
+                                   target={"_blank"}>
                                     <p className={"edition-name"}>G Developers</p>
                                     <a href={"https://developers.google.com/profile/u/117810861260902165797"}
                                        target={"_blank"}>Visit <svg
@@ -747,7 +767,7 @@ export default class Home extends Component {
                                     </svg></a>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://www.hackerrank.com/sathnindu"} target={"_blank"}>
                                     <p className={"edition-name"}>HackerRank</p>
                                     <a href={"https://www.hackerrank.com/sathnindu"} target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
@@ -759,7 +779,7 @@ export default class Home extends Component {
                                     </svg></a>
                                 </a>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://github.com/"} target={"_blank"}>
+                                   href={"https://gitcoin.co/sathninduk"} target={"_blank"}>
                                     <p className={"edition-name"}>GitCoin</p>
                                     <a href={"https://gitcoin.co/sathninduk"} target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
@@ -813,13 +833,17 @@ export default class Home extends Component {
                             from the depth of its algorithm.
                         </h3>
 
-                        <div style={{transform: "rotate(-5deg)"}} className={"contact-details"}>
-                            <h1 className={"big-board big-board-tel"}>
-                                (+94) 74 180 2242
-                            </h1>
-                            <h1 className={"big-board big-board-email"}>
-                                bysatha@gmail.com
-                            </h1>
+                        <div style={{transform: "rotate(-5deg)"}} className={"contact-details"} id={"contact"}>
+                            <a href={"tel:+94741802242"}>
+                                <h1 className={"big-board big-board-tel"}>
+                                    (+94) 74 180 2242
+                                </h1>
+                            </a>
+                            <a href={"mailto:devbysatha@gmail.com"}>
+                                <h1 className={"big-board big-board-email"}>
+                                    devbysatha@gmail.com
+                                </h1>
+                            </a>
                         </div>
 
                     </div>
@@ -844,12 +868,13 @@ export default class Home extends Component {
                                     {/*href={"#"}>SATHA</a></span>*/}
                                 </div>
                                 <div className={"col"}>
-                                    <a className={"footer-page-link"} href={"#"}>Privacy Policy</a>
+                                    <a className={"footer-page-link"} href={"/privacy"}>Privacy Policy</a>
                                     <span className={"privacy-divider"}>•</span>
-                                    <a className={"footer-page-link"} href={"#"}>Terms & Conditions</a>
+                                    <a className={"footer-page-link"} href={"/terms"}>Terms & Conditions</a>
                                 </div>
                                 <div className={"col"}>
-                                    <p className={"copyright-text"}>©{new Date().getFullYear()} SATHNINDU
+                                    <p className={"copyright-text"}
+                                       style={{color: "#000!important"}}>©{new Date().getFullYear()} SATHNINDU
                                         KOTTAGE</p>
                                 </div>
                             </div>
