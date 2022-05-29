@@ -9,7 +9,7 @@ export default class NotFound extends Component {
                     <div className={"not-found con-mid"}>
 
                         <div className={"not-found-head"}>
-                            <img src={"/img/404/ufo.png"} className={"not-found-img"} alt={"not-found image"}/>
+                            <img src={"/img/404/ufo.png"} className={"not-found-img"} alt={"not-found"}/>
                             <h1 className={"panipuri"}><span style={{color: "#000"}}>error</span></h1>
                             <h1>&nbsp;</h1>
                             <h1 className={"panipuri"}>404</h1>
