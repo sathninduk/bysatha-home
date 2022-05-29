@@ -1,7 +1,8 @@
 {
   "name": "by-satha-web",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
+  "homepage": "https://bysatha.github.io",
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -15,7 +16,6 @@
     "nth-check": "^2.0.1",
     "react-scripts": "^5.0.1"
   },
-  "homepage": "https://bysatha.github.io/bysatha-home/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
