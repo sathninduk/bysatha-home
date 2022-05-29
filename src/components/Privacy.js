@@ -151,7 +151,7 @@ export default class Privacy extends Component {
                     <ul>
                         <li style={{lineHeight: '1.5'}}><span style={{fontSize: '15px', color: 'rgb(89, 89, 89)'}}><span
                             style={{fontSize: '15px', color: 'rgb(89, 89, 89)'}}><span data-custom-class="body_text">Visit our website<bdt
-                            className="block-component"/> at <bdt className="question"><a href="https://bysatha.com"
+                            className="block-component"/> at <bdt className="question"><a rel="noreferrer noopener" href="https://bysatha.com"
                                                                                           target="_blank"
                                                                                           data-custom-class="link">https://bysatha.com</a></bdt><span
                             style={{fontSize: '15px'}}><span style={{color: 'rgb(89, 89, 89)'}}><span
