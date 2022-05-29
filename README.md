@@ -1,2 +1,2 @@
 # By Satha - Web
-©2022 Nilvin Sathnindu Kottage
+Copyright © Nilvin Sathnindu Kottage. All rights reserved.
