@@ -2,7 +2,7 @@
   "name": "by-satha-web",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://bysatha.github.io/bysatha-home/",
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
