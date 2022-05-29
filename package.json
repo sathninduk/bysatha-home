@@ -15,7 +15,7 @@
     "nth-check": "^2.0.1",
     "react-scripts": "^5.0.1"
   },
-  "homepage": "https://bysatha.github.io",
+  "homepage": "https://bysatha.github.io/bysatha-home/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
