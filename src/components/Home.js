@@ -33,7 +33,7 @@ export default class Home extends Component {
                                         and <span className={"panipuri"}>solutions</span>
                                     </h1>
                                     <h3>
-                                        for computer science & engineering 😎
+                                        for computer science & engineering <span role="img" aria-label={"cool"}>😎</span>
                                     </h3>
 
                                     <br/>
@@ -68,7 +68,7 @@ export default class Home extends Component {
                                         className={"panipuri"}>solutions</span>
                                     </h1>
                                     <h3 style={{fontSize: "1.3rem"}}>
-                                        for computer science & engineering 😎
+                                        for computer science & engineering <span role="img" aria-label={"cool"}>😎</span>
                                     </h3>
 
                                     <br/>
@@ -103,10 +103,10 @@ export default class Home extends Component {
                                     <span className={"panipuri"}>AKA <span style={{color: "#000"}}>satha</span>.</span>
                                 </h1>
                                 <h3 style={{color: "#737373", marginTop: "30px", fontSize: "21px"}}>
-                                    A teen guy who scientifically solves problems by chewing bubble gums.
+                                    A teen guy who solves problems scientifically by chewing bubble gum.
                                 </h3>
                                 <h3 style={{color: "#737373", fontSize: "21px"}}>
-                                    Industrial quality, modern, on-time, accuracy, security and honesty 💯
+                                    Industrial quality, modern, on-time, accuracy, security and honesty <span role="img" aria-label={"100"}>💯</span>
                                 </h3>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ export default class Home extends Component {
                         <div className={"row edition-list"} style={{marginTop: "30px"}}>
                             <div className={"col-lg con-mid"}>
                                 <h3 className="panipuri"><span
-                                    style={{color: "rgb(68,68,68)"}}>how's my</span> creativity? 🙃</h3>
+                                    style={{color: "rgb(68,68,68)"}}>how's my</span> creativity? <span role="img" aria-label={"up down smile"}>🙃</span></h3>
                                 <p>Likewise, all my solutions are creative.</p>
                             </div>
                         </div>

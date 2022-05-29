@@ -1,27 +1,9 @@
 @font-face {
-    font-family: "Akira Expanded";
-    src: url("./Akira-Expanded-Demo.woff2") format("woff2");
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-}
-
-@font-face {
     font-family: "Neutro";
     src: url("./Neutro-ExtraBold.woff2") format("woff2");
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-}
-
-@font-face {
-    font-family: "Cunia";
-    src: url("./cunia.woff2") format("woff2");
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
 }
 
 @font-face {
     font-family: "Panipuri";
     src: url("./Panipuri.woff2") format("woff2");
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
 }
