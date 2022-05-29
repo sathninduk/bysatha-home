@@ -1028,7 +1028,7 @@ nav svg:hover {
 
 @media screen and (max-width: 992px) {
     .nav-contact-btn-mob {
-        margin-bottom: 20px!important;
+        margin-bottom: 20px !important;
     }
 }
 
@@ -1055,4 +1055,19 @@ nav svg:hover {
     font-family: Arial, serif !important;
     font-size: 14px;
     line-height: 115%;
+}
+
+/* 404 Not Found Page */
+
+.not-found {
+    width: 100%;
+    min-height: calc(100vh - 57px);
+}
+
+.not-found-img {
+    width: 100px;
+}
+
+.not-found-head, .not-found-head img, .not-found-head h1 {
+    display: inline-block;
 }
