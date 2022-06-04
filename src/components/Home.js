@@ -190,7 +190,7 @@ export default class Home extends Component {
                             <br/>
                             <br/>
                             <h3 className={"panipuri"}><span>👇</span> also, <span
-                                style={{color: "#000"}}>yeah!</span> but <span className={"neutro"}
+                                style={{color: "#000"}}>yeah!</span> but <span className={"neutro scientifically-neutro"}
                                                                                style={{color: "#000"}}>scientifically</span>
                             </h3>
                             <div className={"row edition-list edition-list-1 edition-list-2"}>
