@@ -1071,3 +1071,70 @@ nav svg:hover {
 .not-found-head, .not-found-head img, .not-found-head h1 {
     display: inline-block;
 }
+
+.other-services {
+    margin-top: 40px;
+}
+
+.other-services h3 {
+    text-align: center;
+}
+
+.life-goal {
+    width: 800px;
+    /*text-align: left;*/
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.life-game-h3 {
+    width: 800px;
+    /*text-align: left;*/
+}
+
+@media screen and (max-width: 992px) {
+    .life-goal, .life-game-h3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .life-goal, .life-game-h3 {
+        width: 100%;
+    }
+}
+
+.life-game-col-1 {
+    width: 650px;
+}
+
+.life-game-col-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #5765f1;
+    padding: 40px 30px;
+}
+
+.life-game-col-1 p, .life-game-col-2 p {
+    margin: 0;
+}
+
+.life-game-col-2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px dashed #5765f1;
+    padding: 40px 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .life-game-col-1 {
+        min-width: 100%;
+        border: none;
+    }
+
+    .life-game-col-2 {
+        border-radius: 10px;
+    }
+}

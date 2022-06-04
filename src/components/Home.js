@@ -33,7 +33,8 @@ export default class Home extends Component {
                                         and <span className={"panipuri"}>solutions</span>
                                     </h1>
                                     <h3>
-                                        for computer science & engineering <span role="img" aria-label={"cool"}>😎</span>
+                                        for computer science & engineering <span role="img"
+                                                                                 aria-label={"cool"}>😎</span>
                                     </h3>
 
                                     <br/>
@@ -68,7 +69,8 @@ export default class Home extends Component {
                                         className={"panipuri"}>solutions</span>
                                     </h1>
                                     <h3 style={{fontSize: "1.3rem"}}>
-                                        for computer science & engineering <span role="img" aria-label={"cool"}>😎</span>
+                                        for computer science & engineering <span role="img"
+                                                                                 aria-label={"cool"}>😎</span>
                                     </h3>
 
                                     <br/>
@@ -106,7 +108,8 @@ export default class Home extends Component {
                                     A teen guy who solves problems scientifically by chewing bubble gum.
                                 </h3>
                                 <h3 style={{color: "#737373", fontSize: "21px"}}>
-                                    Industrial quality, modern, on-time, accuracy, security and honesty <span role="img" aria-label={"100"}>💯</span>
+                                    Industrial quality, modern, on-time, accuracy, security and honesty <span role="img"
+                                                                                                              aria-label={"100"}>💯</span>
                                 </h3>
                             </div>
                         </div>
@@ -118,53 +121,108 @@ export default class Home extends Component {
                     <div className={"container"}>
                         <div className={"con-mid"}>
                         </div>
-                        <div className={"row edition-list edition-list-1 edition-list-2"}>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Software Engineering</p>
-                                <p className={"edition-desc"}>Design, develop, maintain, test, and evaluate</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Full-Stack Developing</p>
-                                <p className={"edition-desc"}>Java Spring, .NET, PHP, MERN, Python Django, Ruby</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Web Designing</p>
-                                <p className={"edition-desc"}>General, Interactive, e-commerce, event & mission
-                                    critical</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Cyber Security</p>
-                                <p className={"edition-desc"}>Security analysis, White-hat hacking, Incident
-                                    investigation</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Problem Solving</p>
-                                <p className={"edition-desc"}>System architectures & Computational mathematics</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Debugging</p>
-                                <p className={"edition-desc"}>Deployed and developing stage systems</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>IT Consulting</p>
-                                <p className={"edition-desc"}>Computational thinking and debugging</p>
-                            </div>
-                            <div className={"col con-mid"}>
-                                <p className={"edition-name"}>Researching & Inventing</p>
-                                <p className={"edition-desc"}>Universal algorithms and computation systems</p>
+                        <div className={""} style={{marginTop: "30px"}}>
+                            <h3 className="panipuri life-game-h3">
+                                <span style={{color: "#000"}}>the </span>life <span className={"neutro"}
+                                                                                    style={{color: "#000"}}>game</span>
+                                <span
+                                    role="img" aria-label={"up down smile"}></span>
+                            </h3>
+
+
+                            <div className={"row"}>
+                                <div className={"col life-game-col life-game-col-1"}>
+                                    <p className={"life-goal"}>
+                                        <span style={{textAlign: "center"}}>
+                                            <strike>Full-stack developing</strike>, <strike>Programing</strike>, <strike>Software engineering</strike>, <br/><strike>DevOps</strike> & <strike>blah
+                                                blah</strike> 🤮
+                                        <br/>
+                                        <strike>I can JAVA, C#, Python, JavaScript & Laa Laa very well...</strike> 😅
+                                        <br/>
+                                        <br/>
+                                        <span className={"panipuri"}>
+                                            The above can be done by any typical person <br/>even while watching YouTube.
+                                        </span>
+                                    </span>
+
+                                        <br/>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div className={"col life-game-col life-game-col-2"}>
+                                    <p style={{textAlign: "left"}}>
+                                        Maths & Algorithms are the heart of theoretical computer science.
+                                        <br/>
+                                        <br/>
+                                        <b>So my life goal is to simulate unseen cosmological & mathematical
+                                            approaches from computer science.</b>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className={"row edition-list"} style={{marginTop: "30px"}}>
-                            <div className={"col-lg con-mid"}>
-                                <h3 className="panipuri"><span
-                                    style={{color: "rgb(68,68,68)"}}>how's my</span> creativity? <span role="img" aria-label={"up down smile"}>🙃</span></h3>
-                                <p>Likewise, all my solutions are creative.</p>
+
+                        <div className={"other-services"}>
+                            <div className={"row edition-list edition-list-1 edition-list-2"}>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Researching</p>
+                                    <p className={"edition-desc"}>Computational mathematics, Algorithms and Scientific
+                                        ideas</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Inventing</p>
+                                    <p className={"edition-desc"}>Universal cyber and computation systems</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Problem Solving</p>
+                                    <p className={"edition-desc"}>System architectures & Computational mathematics</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Knowledge Sharing</p>
+                                    <p className={"edition-desc"}>Everything I know, and Anything I want to know</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>CS Consulting</p>
+                                    <p className={"edition-desc"}>Scientific & Computational thinking</p>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <h3 className={"panipuri"}><span>👇</span> also, <span
+                                style={{color: "#000"}}>yeah!</span> but <span className={"neutro"}
+                                                                               style={{color: "#000"}}>scientifically</span>
+                            </h3>
+                            <div className={"row edition-list edition-list-1 edition-list-2"}>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Software Engineering</p>
+                                    <p className={"edition-desc"}>Design, develop, maintain, test, and evaluate</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Full-Stack Developing</p>
+                                    <p className={"edition-desc"}>Java Spring, .NET, PHP, MERN, Python Django, Ruby</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Web Designing</p>
+                                    <p className={"edition-desc"}>General, Interactive, e-commerce, event & mission
+                                        critical</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Cyber Security</p>
+                                    <p className={"edition-desc"}>Security analysis, White-hat hacking, Incident
+                                        investigation</p>
+                                </div>
+                                <div className={"col con-mid"}>
+                                    <p className={"edition-name"}>Debugging</p>
+                                    <p className={"edition-desc"}>Deployed and developing stage systems</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* section 4 */}
+                {/* section 4 */
+                }
                 <div className={"research research-projects"} id={"research"}>
                     <div className={"container"}>
 
@@ -179,7 +237,8 @@ export default class Home extends Component {
                                 <h3>Project CyberUniversal</h3>
                                 <p>(2022 - 2023)</p>
                                 <div className={"row edition-list edition-list-special"}>
-                                    <div className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                    <a href={"https://dpacks.netlify.app/"}
+                                       className={"col con-mid research-block research-up block-href"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks</p>
                                         <p className={"edition-desc"}>The first ever database and language exempt
@@ -188,8 +247,9 @@ export default class Home extends Component {
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             Coming Soon
                                         </p>
-                                    </div>
-                                    <div className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                    </a>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks +</p>
                                         <p className={"edition-desc"}>The ultimate search engine crawling technology</p>
@@ -197,7 +257,8 @@ export default class Home extends Component {
                                             Coming Soon
                                         </p>
                                     </div>
-                                    <div className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks Pro</p>
                                         <p className={"edition-desc"}>Centralised data variable edition of the Dpacks
@@ -207,7 +268,7 @@ export default class Home extends Component {
                                         </p>
                                     </div>
                                     <a className={"col con-mid research-block research-active block-href"}
-                                       href={"https://nightly.dpacks.net"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://dpacks-nightly.netlify.app"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-active"}>Production - Active
                                         </div>
                                         <p className={"edition-name"}>Dpacks Nightly</p>
@@ -219,7 +280,8 @@ export default class Home extends Component {
                                     </a>
                                 </div>
                                 <div className={"row edition-list"}>
-                                    <div className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks Core</p>
                                         <p className={"edition-desc"}>The core technology of Dpacks</p>
@@ -227,7 +289,8 @@ export default class Home extends Component {
                                             Coming Soon
                                         </p>
                                     </div>
-                                    <div className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Kelof</p>
                                         <p className={"edition-desc"}>The most technically affordable IaaS</p>
@@ -374,7 +437,8 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/mernBase_graphQL"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/coduza/mernBase_graphQL"} rel="noreferrer"
+                                       target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernBase_graphQL</p>
                                         <p className={"edition-desc"}>Open-source MERN stack with GraphQL development
@@ -400,7 +464,8 @@ export default class Home extends Component {
                                 <p>(2021)</p>
                                 <div className={"row edition-list"}>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/encrig"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/project-evilcodes/encrig"} rel="noreferrer"
+                                       target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>encrig</p>
                                         <p className={"edition-desc"}>Encrypted IPFS static storage gateway</p>
@@ -418,7 +483,8 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/efores"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/project-evilcodes/efores"} rel="noreferrer"
+                                       target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>efores</p>
                                         <p className={"edition-desc"}>ERC-721 Non-Fungible token minting platform</p>
@@ -436,7 +502,8 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/reduza1"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/project-evilcodes/reduza1"} rel="noreferrer"
+                                       target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>reduza</p>
                                         <p className={"edition-desc"}>Project Reduza (Red) PreV1.0 - An algorithm for
@@ -464,7 +531,8 @@ export default class Home extends Component {
                                         <p>(2021)</p>
                                         <div className={"row edition-list"}>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/radiofusion/dearEarth"} rel="noreferrer" target={"_blank"}>
+                                               href={"https://github.com/radiofusion/dearEarth"} rel="noreferrer"
+                                               target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>dearEarth</p>
                                                 <p className={"edition-desc"}>An ML intelligence for identify earth
@@ -492,7 +560,8 @@ export default class Home extends Component {
                                         <p>(2020)</p>
                                         <div className={"row edition-list"}>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/sathninduk/streamfig"} rel="noreferrer" target={"_blank"}>
+                                               href={"https://github.com/sathninduk/streamfig"} rel="noreferrer"
+                                               target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>streamfig</p>
                                                 <p className={"edition-desc"}>Real-time streaming platform for
@@ -521,7 +590,8 @@ export default class Home extends Component {
                                         <h3>Miscellaneous</h3>
                                         <div className={"row edition-list"}>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/sathninduk/gaserp"} rel="noreferrer" target={"_blank"}>
+                                               href={"https://github.com/sathninduk/gaserp"} rel="noreferrer"
+                                               target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>Gaserp</p>
                                                 <p className={"edition-desc"}>BA focused online delivery and ERP
@@ -540,7 +610,8 @@ export default class Home extends Component {
                                                 </p>
                                             </a>
                                             <a className={"col con-mid research-block research-open block-href"}
-                                               href={"https://github.com/sathninduk/nodeblaze"} rel="noreferrer" target={"_blank"}>
+                                               href={"https://github.com/sathninduk/nodeblaze"} rel="noreferrer"
+                                               target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>Open-Source</div>
                                                 <p className={"edition-name"}>NodeBlaze</p>
                                                 <p className={"edition-desc"}>An experiment for a real-time approach by
@@ -670,7 +741,7 @@ export default class Home extends Component {
                             </div>
                             <div className={"row edition-list edition-list-2"}>
                                 <a className={"col con-mid block-href"}
-                                   href={"https://dpacks.net/"} rel="noreferrer" target={"_blank"}>
+                                   href={"https://dpacks.netlify.app/"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>Dpacks Technology</p>
                                     <p className={"edition-desc"}>Inventor</p>
                                     <div className={"logo-box"}>
@@ -711,7 +782,8 @@ export default class Home extends Component {
                                 <a className={"col con-mid block-href"}
                                    href={"https://github.com/sathninduk"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>GitHub</p>
-                                    <a href={"https://github.com/sathninduk"} rel="noreferrer" target={"_blank"}>Visit <svg
+                                    <a href={"https://github.com/sathninduk"} rel="noreferrer"
+                                       target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -737,7 +809,8 @@ export default class Home extends Component {
                                 <a className={"col con-mid block-href"}
                                    href={"https://www.linkedin.com/in/sathnindu/"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>Linkedin</p>
-                                    <a href={"https://www.linkedin.com/in/sathnindu/"} rel="noreferrer" target={"_blank"}>Visit <svg
+                                    <a href={"https://www.linkedin.com/in/sathnindu/"} rel="noreferrer"
+                                       target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -763,7 +836,8 @@ export default class Home extends Component {
                                 <a className={"col con-mid block-href"}
                                    href={"https://www.hackerrank.com/sathnindu"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>HackerRank</p>
-                                    <a href={"https://www.hackerrank.com/sathnindu"} rel="noreferrer" target={"_blank"}>Visit <svg
+                                    <a href={"https://www.hackerrank.com/sathnindu"} rel="noreferrer"
+                                       target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -775,7 +849,8 @@ export default class Home extends Component {
                                 <a className={"col con-mid block-href"}
                                    href={"https://gitcoin.co/sathninduk"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>GitCoin</p>
-                                    <a href={"https://gitcoin.co/sathninduk"} rel="noreferrer" target={"_blank"}>Visit <svg
+                                    <a href={"https://gitcoin.co/sathninduk"} rel="noreferrer"
+                                       target={"_blank"}>Visit <svg
                                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
                                         height="15" width="15" data-testid="OpenInNewIcon" tabindex="-1"
@@ -793,7 +868,8 @@ export default class Home extends Component {
                             <p>
                                 1000+ GitHub Contributions (2021-2022)
                                 <br/>
-                                <a href={"https://skyline.github.com/sathninduk/2021"} rel="noreferrer" target={"_blank"}>GitHub
+                                <a href={"https://skyline.github.com/sathninduk/2021"} rel="noreferrer"
+                                   target={"_blank"}>GitHub
                                     Skyline <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill={"#5765f1"}

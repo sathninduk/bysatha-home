@@ -40,8 +40,13 @@ export default class Navbar extends Component {
                                 </a>
                             </li>
                             <li className="nav-item con-mid">
-                                <a href={"https://www.koffee.com"} rel="noreferrer" target={"_blank"} className="nav-link">
-                                    Donate
+                                <a href={"https://gitcoin.co/tip?username=sathninduk"} className="nav-link">
+                                    Crypto Donate
+                                </a>
+                            </li>
+                            <li className="nav-item con-mid">
+                                <a href={"https://ko-fi.com/sathnindu"} className="nav-link">
+                                    ko-fi Donate
                                 </a>
                             </li>
                         </ul>
