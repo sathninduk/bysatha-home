@@ -268,7 +268,7 @@ export default class Home extends Component {
                                         </p>
                                     </div>
                                     <a className={"col con-mid research-block research-active block-href"}
-                                       href={"https://dpacks-nightly.netlify.app"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://dpacks.space"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-active"}>Production - Active
                                         </div>
                                         <p className={"edition-name"}>Dpacks Nightly</p>
