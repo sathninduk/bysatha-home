@@ -91,7 +91,7 @@ export default class Navbar extends Component {
                                 </a>
                             </li>
                             <li className="nav-item con-mid pc-social-nav">
-                                <a href={"mailto:devbysatha@gmail.com"} rel="noreferrer" target={"_blank"}>
+                                <a href={"mailto:hello@bysatha.com"} rel="noreferrer" target={"_blank"}>
                                     <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24"
@@ -133,7 +133,7 @@ export default class Navbar extends Component {
                                 <a href={"https://wa.me/+94741802242"} rel="noreferrer" target={"_blank"}>WhatsApp</a>
                             </li>
                             <li className="nav-item con-mid mob-social-nav">
-                                <a href={"mailto:devbysatha@gmail.com"} rel="noreferrer" target={"_blank"}>Email</a>
+                                <a href={"mailto:hello@bysatha.com"} rel="noreferrer" target={"_blank"}>Email</a>
                             </li>
                             <li className="nav-item con-mid mob-social-nav">
                                 <a href={"https://github.com/sathninduk"} rel="noreferrer" target={"_blank"}>GitHub</a>

@@ -69,7 +69,7 @@ export default class Privacy extends Component {
                         </ul>
                         <div style={{lineHeight: '1.5'}}><span style={{fontSize: '15px'}}><span
                             style={{color: 'rgb(127, 127, 127)'}}><span data-custom-class="body_text"><strong>Questions or concerns?&nbsp;</strong>Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <bdt
-                            className="question">devbysatha@gmail.com</bdt>.</span></span></span></div>
+                            className="question">hello@bysatha.com</bdt>.</span></span></span></div>
                         <div style={{lineHeight: '1.5'}}><br/></div>
                         <div style={{lineHeight: '1.5'}}><br/></div>
                         <div style={{lineHeight: '1.5'}}><strong><span style={{fontSize: '15px'}}><span
@@ -1168,7 +1168,7 @@ export default class Privacy extends Component {
                                                                                                                                                     }}><span
                                                                                                                                                     data-custom-class="body_text"><bdt
                                                                                                                                                     className="block-component"/><bdt
-                                                                                                                                                    className="question">devbysatha@gmail.com</bdt><bdt
+                                                                                                                                                    className="question">hello@bysatha.com</bdt><bdt
                                                                                                                                                     className="else-block"/></span></span>.<span
                                                                                                                                                     style={{
                                                                                                                                                         color: 'rgb(89, 89, 89)',
@@ -1459,7 +1459,7 @@ export default class Privacy extends Component {
                                                                                                                                                 <span
                                                                                                                                                     data-custom-class="body_text"><span
                                                                                                                                                     style={{fontSize: '15px'}}>If you have questions or comments about your privacy rights, you may email us at <bdt
-                                                                                                                                                    className="question">devbysatha@gmail.com</bdt>.</span></span>
+                                                                                                                                                    className="question">hello@bysatha.com</bdt>.</span></span>
                                                                                                                                                 <bdt
                                                                                                                                                     className="statement-end-if-in-editor">
                                                                                                                                                     <span
@@ -1709,7 +1709,7 @@ export default class Privacy extends Component {
                                                                                                                                                     }}><span
                                                                                                                                                     data-custom-class="body_text"><bdt
                                                                                                                                                     className="block-component"/>email us at <bdt
-                                                                                                                                                    className="question">devbysatha@gmail.com</bdt><bdt
+                                                                                                                                                    className="question">hello@bysatha.com</bdt><bdt
                                                                                                                                                     className="statement-end-if-in-editor"/></span></span><span
                                                                                                                                                     style={{
                                                                                                                                                         fontSize: '15px',

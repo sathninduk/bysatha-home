@@ -2643,7 +2643,7 @@ export default class Terms extends Component {
                                         color: 'rgb(89, 89, 89)'
                                     }}><bdt className="block-container question question-in-editor"
                                             data-id="fdc2b5b8-c95f-244b-23a7-287f82541348"
-                                            data-type="question"><strong>devbysatha@gmail.com</strong></bdt></span></strong></strong>
+                                            data-type="question"><strong>hello@bysatha.com</strong></bdt></span></strong></strong>
                                     </div>
                                 </div>
                                 <style

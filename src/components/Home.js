@@ -909,9 +909,9 @@ export default class Home extends Component {
                                     (+94) 74 180 2242
                                 </h1>
                             </a>
-                            <a href={"mailto:devbysatha@gmail.com"}>
+                            <a href={"mailto:hello@bysatha.com"}>
                                 <h1 className={"big-board big-board-email"}>
-                                    devbysatha@gmail.com
+                                    hello@bysatha.com
                                 </h1>
                             </a>
                         </div>
