@@ -126,7 +126,7 @@ body {
 
 .nav-name {
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .nav-name:hover {
@@ -506,7 +506,7 @@ iframe .watermark {
 }
 
 .main-heading {
-    font-size: 7rem;
+    font-size: 3.5rem;
 }
 
 .social-icon-row {
@@ -955,25 +955,25 @@ nav svg:hover {
 
 @media screen and (max-width: 768px) {
     .main-heading {
-        font-size: 6rem;
+        font-size: 4.5rem;
     }
 }
 
 @media screen and (max-width: 564px) {
     .main-heading {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .main-heading {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 
 @media screen and (max-width: 380px) {
     .main-heading {
-        font-size: 3rem;
+        font-size: 2rem;
         /*margin-top: 30px;*/
     }
 }
@@ -1142,5 +1142,22 @@ nav svg:hover {
 @media screen and (max-width: 549px) {
     .scientifically-neutro {
         font-size: 17px;
+    }
+}
+
+.mob-name {
+    font-size: 22px;
+    line-height: 0;
+}
+
+@media screen and (max-width: 380px) {
+    .mob-name {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand-footer-col {
+        visibility: hidden;
     }
 }

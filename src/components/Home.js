@@ -16,8 +16,11 @@ export default class Home extends Component {
                                 <div className={"col con-left-mid"}>
                                     <div className={"row"}>
                                         <div className={"col-lg"}>
-                                            <h1 className={"panipuri main-heading"}>satha<span
-                                                style={{color: "#fff"}}>.</span></h1>
+                                            <h1 className={"panipuri main-heading"}>
+                                                <span>by</span>
+                                                <span className={"neutro"} style={{color: "#000"}}>satha</span>
+                                            </h1>
+                                            <h5 style={{lineHeight: "0px", fontSize: "22px"}}>Sathnindu Kottage</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -56,8 +59,12 @@ export default class Home extends Component {
 
                             <div className="row mob-hero-header">
                                 <div className={"col-lg con-left-mid mob-satha-text"}>
-                                    <h1 className={"panipuri main-heading"}>satha<span
-                                        style={{color: "#000"}}>.</span></h1>
+                                    <h1 className={"panipuri main-heading"}>
+                                        <span style={{color: "#5765f1", textAlign: "left"}}>by</span>
+                                        <br/>
+                                        <span className={"neutro"} style={{color: "#000"}}>satha</span>
+                                    </h1>
+                                    <h5 className={"mob-name"}>Sathnindu Kottage</h5>
                                 </div>
                                 <div className={"col-lg con-right-mid mob-biological-text"}
                                      style={{marginTop: "80px"}}>
@@ -102,7 +109,7 @@ export default class Home extends Component {
                                 <h1 className={"neutro"}>
                                     I'M <span className={"panipuri"}>sathnindu</span>
                                     <br/>
-                                    <span className={"panipuri"}>AKA <span style={{color: "#000"}}>satha</span>.</span>
+                                    <span className={"panipuri"}>AKA <span className={"neutro"} style={{color: "#000"}}>satha</span>.</span>
                                 </h1>
                                 <h3 style={{color: "#737373", marginTop: "30px", fontSize: "21px"}}>
                                     A teen guy who solves problems scientifically by chewing bubble gum.
@@ -190,8 +197,9 @@ export default class Home extends Component {
                             <br/>
                             <br/>
                             <h3 className={"panipuri"}><span>👇</span> also, <span
-                                style={{color: "#000"}}>yeah!</span> but <span className={"neutro scientifically-neutro"}
-                                                                               style={{color: "#000"}}>scientifically</span>
+                                style={{color: "#000"}}>yeah!</span> but <span
+                                className={"neutro scientifically-neutro"}
+                                style={{color: "#000"}}>scientifically</span>
                             </h3>
                             <div className={"row edition-list edition-list-1 edition-list-2"}>
                                 <div className={"col con-mid"}>
@@ -931,9 +939,11 @@ export default class Home extends Component {
                         <div className={"container"}>
                             {/*<h1>Footer</h1>*/}
                             <div className={"row"}>
-                                <div className={"col"}>
-                                    <h5 style={{margin: "0", padding: "0"}} className={"footer-name"}>satha<span
-                                        style={{color: "#5765f1"}}>.</span></h5>
+                                <div className={"col brand-footer-col"}>
+                                    <h5 style={{margin: "0", padding: "0"}} className={"footer-name"}>
+                                            <span style={{color: "#5765f1"}}>by</span>
+                                            <span style={{fontFamily: 'neutro'}}>satha</span>
+                                    </h5>
                                     {/*<span className={"by-satha-vr"}>|</span><span className={"by-satha"}>BY <a*/}
                                     {/*href={"#"}>SATHA</a></span>*/}
                                 </div>

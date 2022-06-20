@@ -24,7 +24,10 @@ export default class Navbar extends Component {
                     </button>
                     <Link to={"/"} onClick={this.topFunction} className="navbar-brand con-mid">
                         {/*<img src={"/img/dpacks-nav.png"} alt={"dpacks logo"} className={"nav-logo nav-logo-filter"}/>*/}
-                        <h3 className={"nav-name"}>satha<span style={{color: "#5765f1"}}>.</span></h3>
+                        <h3 className={"nav-name"}>
+                            <span style={{color: "#5765f1"}}>by</span>
+                            <span className={"neutro"} style={{color: "#000"}}>satha</span>
+                        </h3>
                     </Link>
 
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
