@@ -112,7 +112,7 @@ export default class Home extends Component {
                                     <span className={"panipuri"}>AKA <span className={"neutro"} style={{color: "#000"}}>satha</span>.</span>
                                 </h1>
                                 <h3 style={{color: "#737373", marginTop: "30px", fontSize: "21px"}}>
-                                    A teen guy who solves problems scientifically by chewing bubble gum.
+                                    A kinda teen guy who solves problems scientifically by chewing bubble gum.
                                 </h3>
                                 <h3 style={{color: "#737373", fontSize: "21px"}}>
                                     Industrial quality, modern, on-time, accuracy, security and honesty <span role="img"
