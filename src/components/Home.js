@@ -148,7 +148,7 @@ export default class Home extends Component {
                                         <br/>
                                         <br/>
                                         <span className={"panipuri"}>
-                                            The above can be done by any typical person <br/>even while watching YouTube.
+                                            The above can be done by any typical person <br/>even from watching YouTube.
                                         </span>
                                     </span>
 
