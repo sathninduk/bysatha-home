@@ -912,9 +912,9 @@ export default class Home extends Component {
                         </h3>
 
                         <div style={{transform: "rotate(-5deg)"}} className={"contact-details"} id={"contact"}>
-                            <a href={"tel:+94785795945"}>
+                            <a href={"tel:+94711226532"}>
                                 <h1 className={"big-board big-board-tel"}>
-                                    (+94) 78 579 5945
+                                    (+94) 71 122 6532
                                 </h1>
                             </a>
                             <a href={"mailto:hello@bysatha.com"}>
