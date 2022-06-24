@@ -2626,7 +2626,7 @@ export default class Terms extends Component {
                                         style={{lineHeight: '115%', fontFamily: 'Arial'}}><bdt
                                         className="block-container question question-in-editor"
                                         data-id="dd6f266f-438b-bfdc-9204-0b17e109e270"
-                                        data-type="question">+94741802242</bdt></span></span></strong></span></strong>
+                                        data-type="question">+94711226532</bdt></span></span></strong></span></strong>
                                     </div>
                                     <div className="MsoNormal" data-custom-class="body_text"
                                          style={{lineHeight: '1.5'}}><strong><span
