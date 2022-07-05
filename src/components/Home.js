@@ -314,7 +314,7 @@ export default class Home extends Component {
                                 <p>(2020 - 2021)</p>
                                 <div className={"row edition-list"}>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/nodeAuth"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/nodeAuth"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>nodeAuth</p>
                                         <p className={"edition-desc"}>Open-source Node.js authentication code-base</p>
@@ -332,7 +332,7 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/mernAuth"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/mernAuth"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernAuth</p>
                                         <p className={"edition-desc"}>Open-source MERN stack authentication
@@ -351,7 +351,7 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/nodeBase2"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/nodeBase2"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>nodeBase</p>
                                         <p className={"edition-desc"}>Open-source Node.js development code-base</p>
@@ -369,7 +369,7 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/mernBase"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/mernBase"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernBase</p>
                                         <p className={"edition-desc"}>Open-source MERN stack development code-base</p>
@@ -389,7 +389,7 @@ export default class Home extends Component {
                                 </div>
                                 <div className={"row edition-list"}>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/pernBase"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/pernBase"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>pernBase</p>
                                         <p className={"edition-desc"}>Open-source PERN stack development code-base</p>
@@ -407,7 +407,7 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/tsPern"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/tsPern"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>tsPern</p>
                                         <p className={"edition-desc"}>Open-source PERN (TypeScript) stack development
@@ -426,7 +426,7 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/tsMern"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://github.com/bysatha/tsMern"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>tsMern</p>
                                         <p className={"edition-desc"}>Open-source MERN (TypeScript) stack development
@@ -445,7 +445,7 @@ export default class Home extends Component {
                                         </p>
                                     </a>
                                     <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/coduza/mernBase_graphQL"} rel="noreferrer"
+                                       href={"https://github.com/bysatha/mernBase_graphQL"} rel="noreferrer"
                                        target={"_blank"}>
                                         <div className={"research-badge research-badge-open"}>Open-Source</div>
                                         <p className={"edition-name"}>mernBase_graphQL</p>
