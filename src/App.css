@@ -567,6 +567,12 @@ iframe .watermark {
     padding: 80px 20px 0 20px;
 }
 
+@media screen and  (max-width: 992px) {
+    .section-me {
+        padding-top: 160px;
+    }
+}
+
 .satha-planet {
     width: 400px;
 }
@@ -743,7 +749,8 @@ iframe .watermark {
 }
 
 .mob-satha-text {
-    margin-top: 23px;
+    /*margin-top: 23px;*/
+    margin-top: 300px;
 }
 
 nav svg:hover {
@@ -780,9 +787,11 @@ nav svg:hover {
 
     .mob-planet-bg {
         height: calc(100vh - 57px);
-        width: 100%;
+        /*width: 100%;*/
+        width: calc(100% - 45px);
         top: 57px;
-        left: -100px;
+        /*left: -100px;*/
+        left: 45px;
         position: absolute;
     }
 
@@ -909,7 +918,7 @@ nav svg:hover {
     }
 
     .mob-satha-text {
-        margin-top: 60px;
+        margin-top: 280px;
     }
 
     .mob-hero-header .hero-title {
@@ -1146,13 +1155,13 @@ nav svg:hover {
 }
 
 .mob-name {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 0;
 }
 
 @media screen and (max-width: 380px) {
     .mob-name {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 

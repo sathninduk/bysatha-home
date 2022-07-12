@@ -59,16 +59,15 @@ export default class Home extends Component {
 
                             <div className="row mob-hero-header">
                                 <div className={"col-lg con-left-mid mob-satha-text"}>
-                                    <h1 className={"panipuri main-heading"}>
+                                    <h1 className={"panipuri main-heading"} style={{fontSize: "36px"}}>
                                         <span style={{color: "#5765f1", textAlign: "left"}}>by</span>
-                                        <br/>
                                         <span className={"neutro"} style={{color: "#000"}}>satha</span>
                                     </h1>
                                     <h5 className={"mob-name"}>Sathnindu Kottage</h5>
                                 </div>
                                 <div className={"col-lg con-right-mid mob-biological-text"}
-                                     style={{marginTop: "80px"}}>
-                                    <h1 className={"hero-title"} style={{fontSize: "2rem"}}>
+                                     style={{marginTop: "32px"}}>
+                                    <h1 className={"hero-title"} style={{fontSize: "1.8rem"}}>
                                         <span style={{fontSize: "1.6rem"}}>a </span><span className={"panipuri"}>biological intelligence </span>
                                         <span style={{fontSize: "1.6rem"}}>with crazy </span><span
                                         className={"panipuri"}>ideas </span>
