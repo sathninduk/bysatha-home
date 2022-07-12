@@ -603,7 +603,7 @@ iframe .watermark {
 
 .footer-img {
     position: absolute;
-    margin-top: -315px;
+    margin-top: -313px;
     z-index: -1;
     height: 400px;
     width: 100%;
@@ -837,7 +837,7 @@ nav svg:hover {
 
     .footer-img {
         /*margin-top: 55px;*/
-        margin-top: -67px;
+        margin-top: -65px;
         height: 200px;
         background-size: 100%;
     }
@@ -920,7 +920,7 @@ nav svg:hover {
 @media screen and (max-width: 327px) {
     .footer-img {
         /*margin-top: 85px;*/
-        margin-top: -67px;
+        margin-top: -63px;
         background-position-y: 25px;
     }
 
