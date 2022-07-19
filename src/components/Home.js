@@ -769,7 +769,7 @@ export default class Home extends Component {
                                 <a className={"col con-mid block-href"}
                                    href={"https://www.coduza.com"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>Coduza</p>
-                                    <p className={"edition-desc"}>CTO & Chief Developer</p>
+                                    <p className={"edition-desc"}>Chief Developer, Tech Lead</p>
                                     <div className={"logo-box-coduza"}>
                                         <img className={"org-logos-coduza"} src={"/img/homepage/logos/coduza.png"}
                                              alt={"Coduza Logo"}/>
