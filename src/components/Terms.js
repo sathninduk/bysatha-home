@@ -2673,6 +2673,7 @@ export default class Terms extends Component {
                         KOTTAGE</p>
                     <br/>
                     <a className="copyrighted-badge" title="Copyrighted.com Registered & Protected" target="_blank"
+                       rel={"noreferrer noopener"}
                        href="https://www.copyrighted.com/website/fkjSSOBcOvnLjZ8q"><img
                         alt="Copyrighted.com Registered & Protected" border={0} width={125} height={25}
                         srcSet="https://static.copyrighted.com/badges/125x25/02_1_2x.png 2x"
