@@ -108,7 +108,8 @@ export default class Home extends Component {
                                 <h1 className={"neutro"}>
                                     I'M <span className={"panipuri"}>sathnindu</span>
                                     <br/>
-                                    <span className={"panipuri"}>AKA <span className={"neutro"} style={{color: "#000"}}>satha</span>.</span>
+                                    <span className={"panipuri"}>AKA <span className={"neutro"}
+                                                                           style={{color: "#000"}}>satha</span>.</span>
                                 </h1>
                                 <h3 style={{color: "#737373", marginTop: "30px", fontSize: "21px"}}>
                                     A kinda teen guy who solves problems scientifically by chewing bubble gum.
@@ -909,8 +910,12 @@ export default class Home extends Component {
                 </div>
 
                 {/* TrustBox widget - Micro Review Count */}
-                <div className="trustpilot-widget" data-locale="en-US" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="62e5e695b7bf78be9d3cd158" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count={10} data-without-reviews-preferred-string-id={1}>
-                    <a href="https://www.trustpilot.com/review/bysatha.com" target="_blank" rel="noreferrer noopener">Trustpilot</a>
+                <div className="trustpilot-widget" data-locale="en-US"
+                     data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="62e5e695b7bf78be9d3cd158"
+                     data-style-height="24px" data-style-width="100%" data-theme="light"
+                     data-min-review-count={10} data-without-reviews-preferred-string-id={1}>
+                    <a href="https://www.trustpilot.com/review/bysatha.com" target="_blank"
+                       rel="noreferrer noopener">Trustpilot</a>
                 </div>
                 {/* End TrustBox widget */}
 
@@ -960,8 +965,8 @@ export default class Home extends Component {
                             <div className={"row"}>
                                 <div className={"col brand-footer-col"}>
                                     <h5 style={{margin: "0", padding: "0"}} className={"footer-name"}>
-                                            <span style={{color: "#5765f1"}}>by</span>
-                                            <span style={{fontFamily: 'neutro'}}>satha</span>
+                                        <span style={{color: "#5765f1"}}>by</span>
+                                        <span style={{fontFamily: 'neutro'}}>satha</span>
                                     </h5>
                                     {/*<span className={"by-satha-vr"}>|</span><span className={"by-satha"}>BY <a*/}
                                     {/*href={"#"}>SATHA</a></span>*/}
