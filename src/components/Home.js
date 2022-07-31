@@ -310,6 +310,91 @@ export default class Home extends Component {
                             </div>
 
                             <div className={"project-list-section"}>
+                                <h3>Project Evilcodes</h3>
+                                <p>(2021-2023)</p>
+                                <div className={"row edition-list"}>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>EthPay</p>
+                                        <p className={"edition-desc"}>Decentralised & Anonymous ERC-20 payment gateway</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </div>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                        <p className={"edition-name"}>BlackHole Protocol</p>
+                                        <p className={"edition-desc"}>ERC-20 transactions' chain breaking protocol</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </div>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/project-evilcodes/encrig"} rel="noreferrer"
+                                       target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>encrig</p>
+                                        <p className={"edition-desc"}>Encrypted IPFS static storage gateway</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://github.com/project-evilcodes/efores"} rel="noreferrer"
+                                       target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                        <p className={"edition-name"}>efores</p>
+                                        <p className={"edition-desc"}>ERC-721 Non-Fungible token minting platform</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            <svg
+                                                style={{marginTop: "-2px"}}
+                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                <path
+                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                            </svg>
+                                            &emsp;Repository
+                                        </p>
+                                    </a>
+                                    <div className={"row edition-list"}>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                           href={"https://github.com/project-evilcodes/reduza1"} rel="noreferrer"
+                                           target={"_blank"}>
+                                            <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                            <p className={"edition-name"}>reduza</p>
+                                            <p className={"edition-desc"}>Project Reduza (Red) PreV1.0 - An algorithm for
+                                                self reproduction</p>
+                                            <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                <svg
+                                                    style={{marginTop: "-2px"}}
+                                                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                    height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                    data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                    <path
+                                                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                </svg>
+                                                &emsp;Repository
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={"project-list-section"}>
                                 <h3>Project CodeBase</h3>
                                 <p>(2020 - 2021)</p>
                                 <div className={"row edition-list"}>
@@ -451,71 +536,6 @@ export default class Home extends Component {
                                         <p className={"edition-name"}>mernBase_graphQL</p>
                                         <p className={"edition-desc"}>Open-source MERN stack with GraphQL development
                                             code-base</p>
-                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                            <svg
-                                                style={{marginTop: "-2px"}}
-                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
-                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                height={"13"} width={"13"} fill={"#4f4f4f"}
-                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
-                                                <path
-                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
-                                            </svg>
-                                            &emsp;Repository
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className={"project-list-section"}>
-                                <h3>Project Evilcodes</h3>
-                                <p>(2021)</p>
-                                <div className={"row edition-list"}>
-                                    <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/encrig"} rel="noreferrer"
-                                       target={"_blank"}>
-                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
-                                        <p className={"edition-name"}>encrig</p>
-                                        <p className={"edition-desc"}>Encrypted IPFS static storage gateway</p>
-                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                            <svg
-                                                style={{marginTop: "-2px"}}
-                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
-                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                height={"13"} width={"13"} fill={"#4f4f4f"}
-                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
-                                                <path
-                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
-                                            </svg>
-                                            &emsp;Repository
-                                        </p>
-                                    </a>
-                                    <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/efores"} rel="noreferrer"
-                                       target={"_blank"}>
-                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
-                                        <p className={"edition-name"}>efores</p>
-                                        <p className={"edition-desc"}>ERC-721 Non-Fungible token minting platform</p>
-                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                            <svg
-                                                style={{marginTop: "-2px"}}
-                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
-                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                height={"13"} width={"13"} fill={"#4f4f4f"}
-                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
-                                                <path
-                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
-                                            </svg>
-                                            &emsp;Repository
-                                        </p>
-                                    </a>
-                                    <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/reduza1"} rel="noreferrer"
-                                       target={"_blank"}>
-                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
-                                        <p className={"edition-name"}>reduza</p>
-                                        <p className={"edition-desc"}>Project Reduza (Red) PreV1.0 - An algorithm for
-                                            self reproduction</p>
                                         <p className={"edition-availability-badge edition-availability-badge-red"}>
                                             <svg
                                                 style={{marginTop: "-2px"}}
