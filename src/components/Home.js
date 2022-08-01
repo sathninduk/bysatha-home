@@ -7,6 +7,7 @@ export default class Home extends Component {
             <div>
                 <Helmet>
                     <title>Satha | Computer Science & Engineering Solutions by Sathnindu Kottage</title>
+                    <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
                 </Helmet>
                 <div className={"main-section con-mid"}>
                     <div className="container">
