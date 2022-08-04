@@ -42,11 +42,11 @@ export default class Navbar extends Component {
                                     GitHub 🐙
                                 </a>
                             </li>
-                            <li className="nav-item con-mid">
-                                <a href={"https://gitcoin.co/tip?username=sathninduk"} rel="noreferrer" target={"_blank"} className="nav-link">
-                                    ETH Donate 💰
-                                </a>
-                            </li>
+                            {/*<li className="nav-item con-mid">*/}
+                            {/*    <a href={"https://gitcoin.co/tip?username=sathninduk"} rel="noreferrer" target={"_blank"} className="nav-link">*/}
+                            {/*        ETH Donate 💰*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                             <li className="nav-item con-mid">
                                 <a href={"https://www.buymeacoffee.com/sathnindu"} rel="noreferrer" target={"_blank"} className="nav-link">
                                     Buy me a coffee ☕️
