@@ -952,18 +952,18 @@ export default class Home extends Component {
                         <h3 className={"footer-whatever"}>
                             whatever your problem,<br/>
                             let's scientifically solve & engineer it<br/>
-                            from the depth of its algorithm. <span>🧮</span>
+                            from the depth of its algorithm.
                         </h3>
 
                         <div style={{transform: "rotate(-5deg)"}} className={"contact-details"} id={"contact"}>
                             <a href={"tel:+94711226532"}>
                                 <h1 className={"big-board big-board-tel"}>
-                                    (+94) 71 122 6532
+                                    <span>📱</span> (+94) 71 122 6532
                                 </h1>
                             </a>
                             <a href={"mailto:hello@bysatha.com"}>
                                 <h1 className={"big-board big-board-email"}>
-                                    hello@bysatha.com
+                                    <span>✉️</span> hello@bysatha.com
                                 </h1>
                             </a>
                         </div>
