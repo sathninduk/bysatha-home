@@ -44,7 +44,7 @@ export default class Navbar extends Component {
                             </li>
                             <li className="nav-item con-mid">
                                 <a href={"https://gitcoin.co/tip?username=sathninduk"} className="nav-link">
-                                    Crypto Donate 💰
+                                    ETH Donate 💰
                                 </a>
                             </li>
                             <li className="nav-item con-mid">
