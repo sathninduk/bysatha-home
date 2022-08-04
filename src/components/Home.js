@@ -131,7 +131,7 @@ export default class Home extends Component {
                         </div>
                         <div className={""} style={{marginTop: "30px"}}>
                             <h3 className="panipuri life-game-h3">
-                                <span style={{color: "#000"}}>the </span>life <span className={"neutro"}
+                                <span style={{color: "#000"}}><span>👨🏽‍💻</span> the </span>life <span className={"neutro"}
                                                                                     style={{color: "#000"}}>game</span>
                                 <span
                                     role="img" aria-label={"up down smile"}></span>
@@ -163,7 +163,7 @@ export default class Home extends Component {
                                         <br/>
                                         <br/>
                                         <b>So my life goal is to simulate unseen cosmological & mathematical
-                                            approaches from computer science.</b>
+                                            approaches from computer science. </b><span>🧑🏽‍🚀</span>
                                     </p>
                                 </div>
                             </div>
@@ -237,7 +237,7 @@ export default class Home extends Component {
 
                         <div className={"list-section"} style={{marginTop: "0"}}>
                             <div className={"con-mid"}>
-                                <h1><span className={"panipuri"}>research <span
+                                <h1><span className={"panipuri"}><span>🧪</span> research <span
                                     style={{color: "#000"}} className={"neutro title-neutro"}>projects</span></span>
                                 </h1>
                             </div>
@@ -680,7 +680,7 @@ export default class Home extends Component {
                         <div className={"list-section organizations"}>
                             <div className={"con-mid"}>
                                 <h1 style={{marginBottom: "40px", lineHeight: "2rem"}}><span
-                                    className={"panipuri"}>contributed <span
+                                    className={"panipuri"}><span>🏢</span> contributed <span
                                     style={{color: "#000"}}
                                     className={"neutro title-neutro-2"}>organizations</span></span></h1>
                             </div>
@@ -766,7 +766,7 @@ export default class Home extends Component {
                         {/*  portfolio  */}
                         <div className={"list-section"}>
                             <div className={"con-mid"}>
-                                <h1><span className={"panipuri"}>portfolio</span></h1>
+                                <h1><span className={"panipuri"}><span>💼</span> portfolio</span></h1>
                             </div>
                             <div className={"row edition-list edition-list-2"}>
                                 <a className={"col con-mid block-href"}
@@ -804,7 +804,7 @@ export default class Home extends Component {
                         {/*  social  */}
                         <div className={"list-section social-section"} style={{marginBottom: "30px"}}>
                             <div className={"con-mid"}>
-                                <h1><span className={"panipuri"}>dev <span style={{color: "#000"}}>social</span></span>
+                                <h1><span className={"panipuri"}><span>💻</span> dev <span style={{color: "#000"}}>social</span></span>
                                 </h1>
                             </div>
                             <div className={"row edition-list edition-list-2"}>
@@ -907,7 +907,7 @@ export default class Home extends Component {
                         {/*  Timeline  */}
                         <div className={"timeline-section con-mid"}>
                             <p>
-                                1000+ GitHub Contributions (2021-2022)
+                                1000+ GitHub Contributions (2021-2022) 🐙
                                 <br/>
                                 <a href={"https://skyline.github.com/sathninduk/2021"} rel="noreferrer"
                                    target={"_blank"}>GitHub
@@ -952,7 +952,7 @@ export default class Home extends Component {
                         <h3 className={"footer-whatever"}>
                             whatever your problem,<br/>
                             let's scientifically solve & engineer it<br/>
-                            from the depth of its algorithm.
+                            from the depth of its algorithm. <span>🧮</span>
                         </h3>
 
                         <div style={{transform: "rotate(-5deg)"}} className={"contact-details"} id={"contact"}>
