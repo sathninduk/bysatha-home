@@ -48,8 +48,8 @@ export default class Navbar extends Component {
                                 </a>
                             </li>
                             <li className="nav-item con-mid">
-                                <a href={"https://ko-fi.com/sathnindu"} className="nav-link">
-                                    ko-fi Donate
+                                <a href={"https://www.buymeacoffee.com/sathnindu"} className="nav-link">
+                                    Buy me a coffee ☕️
                                 </a>
                             </li>
                         </ul>
