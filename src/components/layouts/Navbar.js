@@ -34,7 +34,7 @@ export default class Navbar extends Component {
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li className="nav-item con-mid">
                                 <a href={"/#research"} className="nav-link">
-                                    Research 🔬
+                                    Research 🧪
                                 </a>
                             </li>
                             <li className="nav-item con-mid">
