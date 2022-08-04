@@ -43,12 +43,12 @@ export default class Navbar extends Component {
                                 </a>
                             </li>
                             <li className="nav-item con-mid">
-                                <a href={"https://gitcoin.co/tip?username=sathninduk"} className="nav-link">
+                                <a href={"https://gitcoin.co/tip?username=sathninduk"} rel="noreferrer" target={"_blank"} className="nav-link">
                                     ETH Donate 💰
                                 </a>
                             </li>
                             <li className="nav-item con-mid">
-                                <a href={"https://www.buymeacoffee.com/sathnindu"} className="nav-link">
+                                <a href={"https://www.buymeacoffee.com/sathnindu"} rel="noreferrer" target={"_blank"} className="nav-link">
                                     Buy me a coffee ☕️
                                 </a>
                             </li>
