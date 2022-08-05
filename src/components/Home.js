@@ -17,7 +17,7 @@ export default class Home extends Component {
                                 <div className={"col con-left-mid"}>
                                     <div className={"row"}>
                                         <div className={"col-lg"}>
-                                            <h1 className={"panipuri main-heading"}>
+                                            <h1 className={"panipuri main-heading"} style={{fontSize: "3rem"}}>
                                                 <span>by</span>
                                                 <span className={"neutro"} style={{color: "#000"}}>satha</span>
                                             </h1>
