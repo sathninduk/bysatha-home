@@ -313,15 +313,17 @@ export default class Home extends Component {
                                 <h3>Project Evilcodes</h3>
                                 <p>(2021-2023)</p>
                                 <div className={"row edition-list"}>
-                                    <div
-                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
-                                        <div className={"research-badge research-badge-up"}>Production - Dev</div>
+                                    <a className={"col con-mid research-block research-active block-href"}
+                                       href={"https://ethpay-beta.netlify.app/"} rel="noreferrer" target={"_blank"}>
+                                        <div className={"research-badge research-badge-active"}>Production - Active
+                                        </div>
                                         <p className={"edition-name"}>EthPay</p>
                                         <p className={"edition-desc"}>Decentralised & Anonymous ERC-20 payment gateway</p>
-                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                            Coming Soon
+                                        <p
+                                            className={"edition-availability-badge edition-availability-badge-green"}>
+                                            V 1.0.0 BETA
                                         </p>
-                                    </div>
+                                    </a>
                                     <div
                                         className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
