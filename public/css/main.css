@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+.footer p, button {
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight: 400;
+}
+
+.eth-pay-amount {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /*background-color: #000a2a;*/
+    color: #fff;
+    background: radial-gradient(
+            60vmax 60vmax at 0% 0%,
+            hsla(240, 100%, 2%, 0.9) 0%,
+            hsla(240, 100%, 2%, 0) 95%),
+    radial-gradient(
+            80vmax 50vmax at 110% -10%,
+            hsla(175, 100%, 60%, 0.9) 0%,
+            hsla(200, 100%, 50%, 0.5) 50%,
+            hsla(240, 100%, 50%, 0) 95%),
+    radial-gradient(
+            90vmax 50vmax at 50vmax 50vmax,
+            hsla(260, 100%, 60%, 0.9) 0%,
+            hsla(240, 100%, 60%, 0) 95%) var(--background);
+
+    /* LIGHT VERSION */
+    /*background-color:#da99ff;*/
+    /*background-image:*/
+    /*        radial-gradient(at 30% 89%, hsla(220,76%,68%,1) 0px, transparent 50%),*/
+    /*        radial-gradient(at 35% 0%, hsla(242,68%,61%,1) 0px, transparent 50%),*/
+    /*        radial-gradient(at 93% 46%, hsla(129,87%,73%,1) 0px, transparent 50%),*/
+    /*        radial-gradient(at 23% 49%, hsla(50,77%,67%,1) 0px, transparent 50%),*/
+    /*        radial-gradient(at 17% 27%, hsla(331,64%,60%,1) 0px, transparent 50%),*/
+    /*        radial-gradient(at 79% 30%, hsla(151,61%,77%,1) 0px, transparent 50%),*/
+    /*        radial-gradient(at 26% 40%, hsla(36,65%,63%,1) 0px, transparent 50%);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+:root {
+    --background: hsl(240, 80%, 10%);
+}
+
+nav {
+    color: #fff;
+    /*position: fixed !important;*/
+    width: 100%;
+    top: 0;
+    /*background-color: rgba(0, 10, 42, .59);*/
+    /*-webkit-backdrop-filter: blur(20px);*/
+    /*backdrop-filter: blur(20px);*/
+    line-height: 1.5;
+    /*border-bottom: 1px solid #232765;*/
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #737dff;
+}
+
+.nav-logo {
+    width: 110px;
+}
+
+.con-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 2rem;
+    }
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    min-height: calc(100vh - 197px);
+}
+
+.main-card {
+    width: 500px;
+    height: 330px;
+}
+
+.ethpay-card {
+    padding: 20px;
+    border: 1.5px solid hsla(0, 0%, 100%, .05);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+}
+
+.connect-btn {
+    width: 200px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(128, 107, 255, 0.22);
+    color: #d1cbff;
+    border: 2px solid #ffffff24;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.connect-btn:hover {
+    box-shadow: 0 0 20px 0 rgba(110, 84, 196, 0.36);
+}
+
+.connect-input {
+    width: 200px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(128, 107, 255, 0.22);
+    color: #d1cbff;
+    border: 2px solid #ffffff24;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #d1cbff;
+}
+
+.connect-btn:hover, .connect-btn:focus, .connect-btn:active {
+    box-shadow: 0 0 20px 0 rgba(110, 84, 196, 0.36);
+    outline: none;
+}
+
+.main-logo {
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #d9c8ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #c0a4ff;
+}
+
+.sub-title {
+    color: #c5b1ff;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.hero-sub h6 {
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 0.2rem;
+    margin-top: 20px;
+    color: #c5b1ff;
+}
+
+.circle-1, .circle-2 {
+    z-index: -1;
+}
+
+.circle-1 {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    background-color: #707bff;
+    position: absolute;
+    top: 12vh;
+    left: 26vw;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #09153f;
+    position: absolute;
+    top: 58vh;
+    right: 26vw;
+}
+
+.circle-3 {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(128, 72, 255, 0.29);
+    border: 1.5px solid hsla(0, 0%, 100%, .05);
+    position: absolute;
+    top: calc(100vh - 150px);
+    left: 7vw;
+    border-top-right-radius: 600px;
+    border-top-left-radius: 600px;
+}
+
+.circle-4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: #4177c2;
+    position: absolute;
+    top: 14vh;
+    right: 20vw;
+}
+
+.evilcodes-logo {
+    width: 100px;
+}
+
+.footer-links a {
+    color: #d9c8ff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+    color: #c0a4ff;
+}
+
+.footer-row {
+    width: 100%;
+}
+
+.footer-row .col {
+    width: calc(100% / 3);
+}
+
+/* About */
+.big-card {
+    padding: 40px;
+    border: 1.5px solid hsla(0, 0%, 100%, .05);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+    text-align: left;
+    width: 760px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 860px) {
+    .big-card {
+        width: 95%;
+    }
+}
+
+.big-card h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.big-card h2 {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.big-card p, .big-card li {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about-logos-container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about-logos {
+    width: 70%;
+}
+
+.about-logo-1, .about-logo-2, .about-logo-3 {
+    width: 100px;
+}
+
+.about-legal-notice {
+    margin-top: 20px;
+    font-size: 10px !important;
+}
+
+.code-span {
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 3px 6px;
+    border-radius: 3px;
+    border: 1.5px solid hsla(0, 0%, 100%, .05);
+    color: #fff;
+}
+
+.sending-wallet-address {
+    padding-top: 20px;
+    font-size: 10px;
+    color: #e9e0ff;
+}
+
+.home-button-1 .home-button-2 {
+    /*margin: 0 10px!important;*/
+}
+
+.home-button-row div {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+@media screen and (max-width: 768px) {
+    .home-button-row div {
+        display: block;
+        margin: 7px 0;
+    }
+}
+
+.api-client-id, .api-secret {
+    border: 1.5px solid hsla(0, 0%, 100%, .05);
+    border-radius: 5px;
+    margin: 12px 7px;
+    padding: 15px;
+}
+
+.api-client-id p, .api-secret p {
+    text-align: left;
+    font-size: 12px;
+}
+
+.secret-span {
+    width: 100%;
+    line-break: anywhere;
+    text-align: left;
+}
+
+.resend-link {
+    font-size: 12px;
+}
+
+.resend-link:hover {
+    cursor: pointer;
+}
+
+
+.main-div {
+    padding: 20px;
+    min-height: calc(100vh - 160px);
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .ethpay-card {
+        height: 400px;
+        width: 100%;
+    }
+
+    .api-client-id, .api-secret {
+        border: none;
+    }
+
+    .circle-1, .circle-2, .circle-3, .circle-4 {
+        display: none;
+    }
+
+    .main-logo {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-div {
+        min-height: calc(100vh - 176px);
+    }
+
+    .footer-row {
+        display: block;
+    }
+
+    .footer-row .col {
+        width: 100%;
+    }
+
+    .footer-row .col:nth-child(1) {
+        margin-bottom: 24px;
+    }
+
+    .footer-row .col:nth-child(3) {
+        /*margin-bottom: 20px;*/
+    }
+
+    .footer-links {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .footer-row .col:nth-child(1) {
+        display: none;
+    }
+
+    .main-logo {
+        width: 220px;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+#navbarTogglerDemo03 .navbar-nav {
+    text-align: center;
+}
+
+#wallet-address {
+    border: 1px solid #fff3;
+    background-color: #ffffff0d;
+    border-radius: 5px;
+}
+
+.nav-testnet {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-testnet {
+        padding-left: 0;
+        margin-top: 17px;
+    }
+}
+
+#currency {
+    width: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#amount {
+    text-align: left;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+}
+
+#send-payment {
+    width: 100px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 460px) {
+    #currency {
+        width: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #amount {
+        text-align: left;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-left: none;
+        border-right: 2px solid #ffffff24;
+    }
+
+    #send-payment {
+        width: 100px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    #send-payment {
+        margin: 20px 0 0;
+        width: 270px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #currency {
+        width: 70px;
+    }
+
+    #amount {
+        width: 150px;
+    }
+
+    #send-payment {
+        width: 220px;
+    }
+
+    .sending-wallet-address {
+        font-size: 8px;
+    }
+}
+
+.server-loader {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(40px);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
