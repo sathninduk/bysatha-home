@@ -980,7 +980,6 @@ export default class Home extends Component {
                     <div
                         className={"footer-section con-end"}>
                         <div className={"container"}>
-                            {/*<h1>Footer</h1>*/}
                             <div className={"row"}>
                                 <div className={"col brand-footer-col"}>
                                     <h5 style={{margin: "0", padding: "0"}} className={"footer-name"}>
