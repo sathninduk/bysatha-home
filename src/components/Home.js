@@ -42,7 +42,6 @@ export default class Home extends Component {
                                     </h3>
 
                                     <br/>
-                                    {/*<h1 className={"main-name"}>SATHA</h1>*/}
                                 </div>
                             </div>
 
