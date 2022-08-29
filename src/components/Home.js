@@ -326,6 +326,15 @@ export default class Home extends Component {
                                     </a>
                                     <div
                                         className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                        <div className={"research-badge research-badge-up"}>Open-Source - Dev</div>
+                                        <p className={"edition-name"}>ether-auth</p>
+                                        <p className={"edition-desc"}>Ethereum Authentication Tokens</p>
+                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                            Coming Soon
+                                        </p>
+                                    </div>
+                                    <div
+                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>BlackHole Protocol</p>
                                         <p className={"edition-desc"}>ERC-20 transactions' chain breaking protocol</p>
