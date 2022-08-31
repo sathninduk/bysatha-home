@@ -7,7 +7,8 @@ export default class Home extends Component {
             <div>
                 <Helmet>
                     <title>Satha | Computer Science & Engineering Solutions by Sathnindu Kottage</title>
-                    <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+                    <script type="text/javascript"
+                            src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
                 </Helmet>
                 <div className={"main-section con-mid"}>
                     <div className="container">
@@ -130,8 +131,9 @@ export default class Home extends Component {
                         </div>
                         <div className={""} style={{marginTop: "30px"}}>
                             <h3 className="panipuri life-game-h3">
-                                <span style={{color: "#000"}}><span>👨🏽‍💻</span> the </span>life <span className={"neutro"}
-                                                                                    style={{color: "#000"}}>game</span>
+                                <span style={{color: "#000"}}><span>👨🏽‍💻</span> the </span>life <span
+                                className={"neutro"}
+                                style={{color: "#000"}}>game</span>
                                 <span
                                     role="img" aria-label={"up down smile"}></span>
                             </h3>
@@ -246,7 +248,8 @@ export default class Home extends Component {
                                 <p>(2022 - 2023)</p>
                                 <div className={"row edition-list edition-list-special"}>
                                     <a href={"https://dpacks.netlify.app/"}
-                                       className={"col con-mid research-block research-up block-href"} rel="noreferrer" target={"_blank"}>
+                                       className={"col con-mid research-block research-up block-href"} rel="noreferrer"
+                                       target={"_blank"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
                                         <p className={"edition-name"}>Dpacks</p>
                                         <p className={"edition-desc"}>The first ever database and language exempt
@@ -318,7 +321,8 @@ export default class Home extends Component {
                                         <div className={"research-badge research-badge-active"}>Production - Active
                                         </div>
                                         <p className={"edition-name"}>EthPay</p>
-                                        <p className={"edition-desc"}>Decentralised & Anonymous ERC-20 payment gateway</p>
+                                        <p className={"edition-desc"}>Decentralised & Anonymous ERC-20 payment
+                                            gateway</p>
                                         <p
                                             className={"edition-availability-badge edition-availability-badge-green"}>
                                             V 1.0.0 BETA
@@ -361,32 +365,34 @@ export default class Home extends Component {
                                             &emsp;Repository
                                         </p>
                                     </a>
-                                    <a className={"col con-mid research-block research-open block-href"}
-                                       href={"https://github.com/project-evilcodes/efores"} rel="noreferrer"
-                                       target={"_blank"}>
-                                        <div className={"research-badge research-badge-open"}>Open-Source</div>
-                                        <p className={"edition-name"}>efores</p>
-                                        <p className={"edition-desc"}>ERC-721 Non-Fungible token minting platform</p>
-                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                            <svg
-                                                style={{marginTop: "-2px"}}
-                                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
-                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                height={"13"} width={"13"} fill={"#4f4f4f"}
-                                                data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
-                                                <path
-                                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
-                                            </svg>
-                                            &emsp;Repository
-                                        </p>
-                                    </a>
                                     <div className={"row edition-list"}>
-                                    <a className={"col con-mid research-block research-open block-href"}
+                                        <a className={"col con-mid research-block research-open block-href"}
+                                           href={"https://github.com/project-evilcodes/efores"} rel="noreferrer"
+                                           target={"_blank"}>
+                                            <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                            <p className={"edition-name"}>efores</p>
+                                            <p className={"edition-desc"}>ERC-721 Non-Fungible token minting
+                                                platform</p>
+                                            <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                <svg
+                                                    style={{marginTop: "-2px"}}
+                                                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                    height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                    data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                    <path
+                                                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                </svg>
+                                                &emsp;Repository
+                                            </p>
+                                        </a>
+                                        <a className={"col con-mid research-block research-open block-href"}
                                            href={"https://github.com/project-evilcodes/reduza1"} rel="noreferrer"
                                            target={"_blank"}>
                                             <div className={"research-badge research-badge-open"}>Open-Source</div>
                                             <p className={"edition-name"}>reduza</p>
-                                            <p className={"edition-desc"}>Project Reduza (Red) PreV1.0 - An algorithm for
+                                            <p className={"edition-desc"}>Project Reduza (Red) PreV1.0 - An algorithm
+                                                for
                                                 self reproduction</p>
                                             <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                 <svg
@@ -814,7 +820,8 @@ export default class Home extends Component {
                         {/*  social  */}
                         <div className={"list-section social-section"} style={{marginBottom: "30px"}}>
                             <div className={"con-mid"}>
-                                <h1><span className={"panipuri"}><span>💻</span> dev <span style={{color: "#000"}}>social</span></span>
+                                <h1><span className={"panipuri"}><span>💻</span> dev <span
+                                    style={{color: "#000"}}>social</span></span>
                                 </h1>
                             </div>
                             <div className={"row edition-list edition-list-2"}>
