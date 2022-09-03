@@ -328,15 +328,17 @@ export default class Home extends Component {
                                             V 1.0.0 BETA
                                         </p>
                                     </a>
-                                    <div
-                                        className={"col con-mid research-block research-up block-href coming-soon-block"}>
-                                        <div className={"research-badge research-badge-up"}>Open-Source - Dev</div>
-                                        <p className={"edition-name"}>ether-auth</p>
+                                    <a className={"col con-mid research-block research-open block-href"}
+                                       href={"https://eth-auth-beta.netlify.app/"} rel="noreferrer" target={"_blank"}>
+                                        <div className={"research-badge research-badge-open"}>Open-Source
+                                        </div>
+                                        <p className={"edition-name"}>eth-auth</p>
                                         <p className={"edition-desc"}>Ethereum Authentication Tokens</p>
-                                        <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                            Coming Soon
+                                        <p
+                                            className={"edition-availability-badge edition-availability-badge-green"}>
+                                            0.0.1-beta1
                                         </p>
-                                    </div>
+                                    </a>
                                     <div
                                         className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                         <div className={"research-badge research-badge-up"}>Production - Dev</div>
