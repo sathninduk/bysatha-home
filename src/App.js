@@ -3,6 +3,7 @@ import {Switch, Route} from "react-router-dom";
 import "./App.css";
 
 import Home from "./components/Home";
+import Open from "./components/Open";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
 import Navbar from "./components/layouts/Navbar";
@@ -20,6 +21,7 @@ class App extends Component {
                         <Route exact path={["/"]} component={Home}/>
                         <Route exact path={["/terms"]} component={Terms}/>
                         <Route exact path={["/privacy"]} component={Privacy}/>
+                        <Route exact path={["/open"]} component={Open}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </div>
