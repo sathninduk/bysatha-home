@@ -8,6 +8,7 @@ import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
 import Navbar from "./components/layouts/Navbar";
 import NotFound from "./components/layouts/NotFound";
+import Open_sliit_y1_s2 from "./components/Open_sliit_y1_s2";
 
 // import Footer from "./components/layouts/Footer";
 
@@ -22,7 +23,7 @@ class App extends Component {
                         <Route exact path={["/terms"]} component={Terms}/>
                         <Route exact path={["/privacy"]} component={Privacy}/>
                         <Route exact path={["/open"]} component={Open}/>
-                        <Route exact path={["/open/sliit/y1/s2"]} component={Open}/>
+                        <Route exact path={["/open/sliit/y1/s2"]} component={Open_sliit_y1_s2}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </div>

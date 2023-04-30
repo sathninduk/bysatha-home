@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
-export default class Home extends Component {
+export default class Open_sliit_y1_s2 extends Component {
     render() {
         window.location.href = "https://github.com/sathninduk/open/tree/main/SLIIT/Year%201/Sem%202";
         return (
