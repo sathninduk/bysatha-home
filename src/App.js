@@ -22,6 +22,7 @@ class App extends Component {
                         <Route exact path={["/terms"]} component={Terms}/>
                         <Route exact path={["/privacy"]} component={Privacy}/>
                         <Route exact path={["/open"]} component={Open}/>
+                        <Route exact path={["/open/sliit/y1/s2"]} component={Open}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </div>
