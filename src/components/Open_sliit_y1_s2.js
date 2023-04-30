@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export default class Home extends Component {
     render() {
-        window.location.href = "https://github.com/sathninduk/open";
+        window.location.href = "https://github.com/sathninduk/open/tree/main/SLIIT/Year%201/Sem%202";
         return (
             <>
                 <div className="container">
