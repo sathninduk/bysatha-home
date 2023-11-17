@@ -1,0 +1,700 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>OSSA - Process Synchronization</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a7ce3572-3603-4181-b9de-971a47799856" class="page sans"><header><h1 class="page-title">OSSA - Process Synchronization</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesCreatedAt"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM4.54102 8.91211H7.99316C8.30078 8.91211 8.54004 8.67285 8.54004 8.37207V3.8877C8.54004 3.58691 8.30078 3.34766 7.99316 3.34766C7.69238 3.34766 7.45312 3.58691 7.45312 3.8877V7.83203H4.54102C4.2334 7.83203 4.00098 8.06445 4.00098 8.37207C4.00098 8.67285 4.2334 8.91211 4.54102 8.91211Z"></path></svg></span>Created</th><td><time>@October 28, 2023 10:40 PM</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Class</th><td><span class="selected-value select-value-color-purple">OSSA</span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Type</th><td><span class="selected-value select-value-color-yellow">Study Group</span></td></tr><tr class="property-row property-row-checkbox"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesCheckbox"><path d="M3.85742 14.4561H12.1357C13.6123 14.4561 14.3779 13.6904 14.3779 12.2344V3.91504C14.3779 2.45215 13.6123 1.69336 12.1357 1.69336H3.85742C2.38086 1.69336 1.61523 2.45215 1.61523 3.91504V12.2344C1.61523 13.6973 2.38086 14.4561 3.85742 14.4561ZM3.93945 13.1162C3.30371 13.1162 2.95508 12.7812 2.95508 12.1182V4.02441C2.95508 3.36133 3.30371 3.0332 3.93945 3.0332H12.0537C12.6826 3.0332 13.0381 3.36133 13.0381 4.02441V12.1182C13.0381 12.7812 12.6826 13.1162 12.0537 13.1162H3.93945ZM7.26855 11.3115C7.51465 11.3115 7.72656 11.1885 7.87012 10.9697L10.9258 6.19141C11.0146 6.04785 11.0967 5.88379 11.0967 5.72656C11.0967 5.3916 10.7959 5.16602 10.4746 5.16602C10.2695 5.16602 10.085 5.27539 9.94141 5.50781L7.24121 9.8418L5.96973 8.22168C5.80566 8.00977 5.6416 7.93457 5.43652 7.93457C5.10156 7.93457 4.8418 8.20117 4.8418 8.54297C4.8418 8.70703 4.90332 8.85742 5.01953 9.00098L6.63281 10.9697C6.81738 11.209 7.01562 11.3115 7.26855 11.3115Z"></path></svg></span>Reviewed</th><td><div class="checkbox checkbox-off"></div></td></tr></tbody></table></header><div class="page-body"><h1 id="f6d939ae-09f9-4030-8069-9c4a2102350d" class="">Process Synchronization</h1><h3 id="59caa891-f433-49be-b85f-45085cd3917d" class="">Race condition</h3><figure id="f813c82e-e633-402c-abeb-65f29bdf4458" class="image"><a href="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-29_at_17.55.55.png"><img style="width:576px" src="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-29_at_17.55.55.png"/></a></figure><p id="a12b2e6a-77d8-4c66-b2de-5b56b5d26c8b" class=""><strong>Problem - Concurrent</strong></p><figure id="66895ce7-9f1c-4438-b032-e400a210b7b6" class="image"><a href="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-29_at_18.01.16.png"><img style="width:576px" src="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-29_at_18.01.16.png"/></a></figure><p id="e3219722-e2d3-4f22-a515-5f1d650f1d28" class=""><strong>Atomic:</strong> Without interrupt</p><p id="7278440d-b4f1-4cb5-8930-9fd056f95da8" class=""><strong>Non-atomic:</strong> With interrupt<div class="indented"><p id="806fefae-431f-46e5-9cda-f2c668aded80" class=""><em>This is a non atomic (because of an interrupt): and it may result for data inconsistency, therefore sequential access is the best.</em></p></div></p><p id="495f1c8f-6814-492e-85c5-5321c9da6f61" class="">
+</p><p id="a84997d6-3806-4551-aeb1-d7bce204644e" class=""><strong>Race condition: </strong><div class="indented"><p id="8a30addc-a7d2-448f-b6fc-4c63306e7ff5" class="">Race condition is a situation where several processes <strong>access/manipulate the same data, resource </strong>concurrently.</p><p id="0b28d92e-c639-4bc4-8039-491d28a754c2" class="">So, the outcome of the execution depends on particular order in which access takes place.</p></div></p><p id="19dae0a8-4db2-44c6-9db5-8b2aeca80b1f" class="">
+</p><p id="8eac4914-e4fe-487f-91a6-81b3fda1d898" class=""><em><strong>Solution: </strong></em><em>Process synchronization. - </em>Only one process can manipulate at a time.</p><p id="6912998c-49b5-497b-a3de-4915e1f192a6" class="">
+</p><p id="efdf50da-1ab5-4aa1-9039-121e1e66b1de" class=""><strong>Critical section: </strong> in this example, <em>counter </em>variable is the critical point.</p><p id="13c44081-46d6-4304-ad3a-e9f2c95ecc4d" class=""><strong>Critical section Definition: </strong><div class="indented"><p id="7d815e38-fee1-4faf-a413-0cbeb243e439" class="">Critical section is a <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>segment of code</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> which process maybe changing common variables, updating table, writing file, etc.</p><p id="5fe0d832-ba08-4799-b1e6-450e9bb96bb0" class="">
+</p></div></p><p id="8da5b452-d570-42c4-b79c-2fd45880214e" class="">Now in here, the <em><strong>critical section problem </strong></em>is:<div class="indented"><p id="e944edf6-7f1b-4490-8904-02dbbcfc7a9e" class=""><span style="border-bottom:0.05em solid"><em>Producer</em></span> does the ++ operation meanwhile (concurrently) the <span style="border-bottom:0.05em solid"><em>consumer</em></span> does the - - operation to the same <strong><span style="border-bottom:0.05em solid"><em>counter</em></span></strong> variable.</p></div></p><h3 id="ab84a4f7-3fae-4600-b49e-869b0e60fc3b" class="">Solutions for the <span style="border-bottom:0.05em solid"><em><strong>critical section problem</strong></em></span></h3><ol type="1" id="f5a404df-dc00-44d9-a64d-3f2115c7e5ce" class="numbered-list" start="1"><li><strong>Mutual exclusion: </strong>if p1 process is in the critical section → p2 will not go to the critical section (at the same time)</li></ol><ol type="1" id="f79d5117-1add-4cba-af06-425fe795b97b" class="numbered-list" start="2"><li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Progress: </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>if p1 is not in the critical section → it should not block the p2 to enter → to the critical section. (If I ain’t doing something, I should not block others) : <span style="border-bottom:0.05em solid"><em><strong>Also, Progress means, the requested process should be able to proceed.</strong></em></span></li></ol><ol type="1" id="a9dd45e1-79ed-410b-8dcd-775254b1cbaf" class="numbered-list" start="3"><li><strong>Bounded waiting: </strong>If a process is waiting (to enter to the critic sec.) → there should be a limit of waiting.</li></ol><p id="485e336a-7ea8-470e-ae46-04c4786f01a9" class="">
+</p><p id="4f48bed5-1736-4a0f-997c-1834f3362c9a" class=""><em><strong>Simple solutions:</strong></em> </p><ul id="2fa069fa-58fd-4f41-9dbc-f1b9a4e707d2" class="bulleted-list"><li style="list-style-type:disc">Disable all interrupts (but as disabling/enabling of interrupts is a <em>privileged</em> operation, it can’t be done every time).</li></ul><ul id="fd850743-b3b8-4003-8976-cb895b560ddd" class="bulleted-list"><li style="list-style-type:disc">Preemptive (no interrupts) kernel: this is not an easy task.</li></ul><p id="d2db2967-610c-4fdd-ae34-f7784bc7c992" class="">
+</p><hr id="ae994738-978f-4096-874f-333a965aef41"/><p id="c9a6165a-2456-4f88-89da-0992713fbb16" class=""><strong>Algorithm 1:</strong> Bounded waiting ❌,<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong> </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> Progress ❌, Mutual exclusion ✅</p><p id="bd5542b8-24fd-4659-93fb-9a201080a8a1" class=""><strong><em>Beginning:</em></strong><em> Turn is set</em></p><p id="e11e1f95-db7b-4ec7-ba9d-480d9486fedb" class="">
+</p><p id="364f37a0-8d9c-491f-b6fa-022246ecc5e9" class=""><strong>While: </strong>not the current process’s turn<strong> </strong><em>(the other process’s turn) </em>→ no-op</p><p id="34948e49-75fa-4cdd-94e6-6340c5bbd042" class=""><strong>Exit: </strong>change the turn</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="605f95a6-765e-46e2-866d-aa1b4f078fea"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Strict alternation: </strong>After this process → next process must run (<strong>mutual exclusion</strong> ✅)<p id="a0231008-1d9f-4c7c-8cb6-70895f17934d" class="">
+</p><ul id="8f95e016-6b25-4155-aa80-05ad7922de58" class="bulleted-list"><li style="list-style-type:disc">Assume: p1 is done → p2 is not ready (but in the next turn p2 <strong>SHOULD</strong> run (Strict alternation)) : <ul id="d6f4eb10-7ad2-4f18-8597-418c3ff56d7e" class="bulleted-list"><li style="list-style-type:circle">but p2 is not ready, but p1 may ready <p id="91dbe59a-6bb0-473f-a6cb-22e5b9a66839" class="">(p2 not run, and also not giving the chance to the p1) → <strong>Progress</strong> ❌</p><p id="3c1aff8a-09c9-466a-babe-a47d3f06b5e7" class="">
+</p></li></ul></li></ul><ul id="ac61b6bf-bc5b-4b93-a99b-5e613b518e0b" class="bulleted-list"><li style="list-style-type:disc">Waiting time is only depends on the mutual exclusion → may wait forever <p id="f7eb059e-1803-4312-a15a-792998a2e513" class="">→ <strong>Bounded waiting </strong>❌</p><p id="e87a83be-3cae-4c33-8b1d-c4726f6c81f1" class="">
+</p></li></ul></div></figure><p id="0ca57325-2d37-4440-ac26-a0d44fe519e9" class="">___________________________________________________________________________________</p><p id="96dd1e82-b5e3-48ea-8772-7808d6380f4a" class=""><strong>Algorithm 2: </strong>Bounded waiting ❌,<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong> </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> Progress ❌, Mutual exclusion ✅<div class="indented"><p id="97edbc00-2aec-4230-8822-d89d41a4b809" class=""><em><em><em><em>In the beginning flag1 &amp; flag2 == false</em></em></em></em></p><p id="bfdf1278-c78f-481e-8fc5-6eccab35ce55" class="">
+</p><p id="6655a860-0bdb-4fae-aa3a-625bda93f4f1" class=""><strong>Enter: </strong>put its flag 🚩</p><p id="4fd806bf-4be0-4654-86e6-4c656aae298c" class=""><strong>While: </strong><em>other process’s flag is up</em> → no-op</p><p id="ce5f341b-915c-4c7e-a955-2ab27b4c7580" class=""><strong>Exit: </strong>down its flag</p><p id="c007f96c-f977-43ff-9e4f-1f10edf664da" class="">
+</p></div></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="248d573a-052d-4830-9519-89319e4a5535"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>p1 set flag1 = true </strong>→ (meanwhile) p2 interrupted: p2 code will check whether flag1 (p1) is true or false → if it is true (now it is) → p2: no-op → visit p1 and p1 CS (<strong>mutual exclusion</strong> ✅) </div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c078489f-2cb1-470d-804b-7e93dc8f49c5"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Progress</strong>: Progress means that if a process/thread wants to enter a critical section, it will eventually do so. In other words, if a process is trying to enter its critical section and no other process is currently in the critical section, the requesting process should be able to proceed.<ul id="1ece0aa8-18a6-4b55-ad71-3c43945df2d9" class="bulleted-list"><li style="list-style-type:disc"><strong>Issue with Flags</strong>: In a simple flag-based solution, there&#x27;s no guarantee of fairness. For example, consider two processes, A and B, both trying to enter a critical section. If A sets its flag and enters the critical section while B is still spinning in a loop waiting for A to release the critical section, <strong>B might never make progress. This scenario can lead to a deadlock.</strong></li></ul><p id="2dcfc7a7-cb77-4e0e-8924-65ac9ef9d40f" class=""><strong>Bounded Waiting</strong>: Bounded waiting ensures that there&#x27;s a limit on how long a process/thread must wait to enter its critical section. It prevents a situation where a process could be starved indefinitely, waiting for its turn.</p><ul id="4327a9fd-6bf6-4194-9af9-e3974422855b" class="bulleted-list"><li style="list-style-type:disc"><strong>Issue with Flags</strong>: The use of flags alone does not guarantee bounded waiting. A process with a high-priority flag might continuously enter the critical section while lower-priority processes are waiting indefinitely.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b8bb5f53-d8ed-4c9c-8a67-db4b0f8a0392"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">→ That’s why <strong>Progress</strong> ❌ + <strong>Bounded waiting </strong>❌</div></figure><p id="561db64c-d13b-42eb-99b6-81d20eb7fedb" class="">
+</p><p id="8e42cbb5-0cc3-4730-90c4-3bdf4d8c7bce" class=""><strong>Peterson’s Solution: </strong>Algorithm 1 + Algorithm 2</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="3b775f26-994d-439b-a599-a1a7678aa45a"><div style="font-size:1.5em"><span class="icon">🧑‍💻</span></div><div style="width:100%"><strong>Enter:</strong><p id="7ca3ae5f-2913-48b6-b102-dfaa5a5298e0" class="">→ put its flag</p><p id="1c32339e-55ef-4b31-a522-6547669b4852" class="">→ mark the <strong><strong><strong><strong>turn</strong></strong></strong></strong> as the <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>other process</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="437e73f5-6f00-45f7-aa2c-f1decfc129cf" class="">
+</p><p id="7526abce-2243-400a-9a0f-69b18fafe16f" class="">if,<div class="indented"><p id="d93761bc-797b-4ed0-b0a6-87a00f7c79e2" class="">→ The other process need (Flag 🚩)</p><p id="8d278016-97aa-4f67-b214-f850598dc609" class="">→ The other process’s turn (Turn <strong>other</strong>)<div class="indented"><p id="d0ff9e01-1175-4ed2-a99d-fd53e390b4fb" class="">= then I will not operate (no-op)</p></div></p><p id="8669b234-3984-492c-99e7-b3f92822d8c4" class="">
+</p></div></p><p id="9204cfe2-6433-4a0a-8d66-405606f04b4f" class=""><strong>Exit: </strong>down the flag</p></div></figure><p id="a787cc8e-d7ab-474c-ad50-520426c6c330" class="">
+</p><h3 id="0ea1d594-2dad-4cea-80cd-7def7d6201d1" class="">Bakery Algorithm</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="77b3f7c3-e724-4b59-ae7a-10044f0378b6"><div style="font-size:1.5em"><span class="icon">🧑‍💻</span></div><div style="width:100%">choosing = 1;<p id="26d17010-9882-47b6-ac0b-68e33e73f0d4" class="">// number = last + 1</p><p id="f0954792-6c2d-4ca4-b2a0-e9ab66da1873" class="">choosing = 0</p><p id="a48268a3-13ba-4e59-a826-02e5d845ac2d" class="">
+</p><p id="60b7ec8a-5e19-4be2-9f77-57cd1362fbf0" class=""><strong>for </strong><em>j </em>= 0 →<strong> </strong><em>n</em>-1                                                                      // check among before processes<div class="indented"><p id="45ae38c8-e800-40cb-b33d-2b39c2565c6a" class="">while (choosing = 1): no-op                                                      // check whether choosing </p><p id="0549088b-baed-40d3-aa62-6b6abdf4137e" class="">while (number ≠ 0 AND (this number &lt; current number)): no-op          // priority check</p><p id="51769811-75f3-4c65-be6a-cb48e19e545a" class="">
+</p></div></p><p id="fafd4a13-ed2d-456f-a98c-a2e49804e006" class="">CRITICAL SECTION</p><p id="40ea26a6-a574-4f70-bb28-f70bcdfff55e" class="">
+</p><p id="6493bf33-acce-48ef-9f6f-4a361ac1c7b7" class="">number = 0</p></div></figure><p id="3ede86c6-9319-4550-ae1a-5776bcc2de8f" class="">
+</p><h3 id="2b62187c-8ae0-4273-bf8c-13548790fe77" class="">Semaphore</h3><figure id="c83b21c1-b75e-4e5e-8529-5e6b6d5406e8" class="image"><a href="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-31_at_17.38.48.png"><img style="width:1276px" src="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-31_at_17.38.48.png"/></a></figure><p id="b11b147e-7db4-4209-a60d-75356ee922b8" class=""><em><strong>if 3 processes are waiting in the semaphore list, semphore value will be -3.</strong></em></p><p id="b30f8c90-b0e2-4a51-a014-6b72ab542844" class="">with the signal, one process will be taken from the semaphore list.</p><figure id="a2a0e19d-9eb1-4560-a99f-149e5eacfb26" class="image"><a href="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-31_at_17.41.44.png"><img style="width:1184px" src="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-31_at_17.41.44.png"/></a></figure><p id="910e4677-4041-4ef5-bb4e-5e139df1fbce" class="">👆 counting semaphore (not binary)</p><p id="44897590-bfb1-4e39-8fc5-c6a0b33eec30" class="">
+</p><ul id="f2fe25d6-a495-493a-97c1-dc741459ecdf" class="bulleted-list"><li style="list-style-type:disc">Semaphore types:</li></ul><figure id="b4e6064e-7cd9-4429-bf56-e566b14841bc" class="image"><a href="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-31_at_17.43.09.png"><img style="width:1496px" src="OSSA%20-%20Process%20Synchronization%20a7ce357236034181b9de971a47799856/Screenshot_2023-10-31_at_17.43.09.png"/></a></figure><p id="dbb287ee-7455-4c60-95c8-6ccd7bfe115b" class=""><strong>Bounded Buffer Problem: </strong>Producer &amp; Consumer</p><p id="b1575484-89da-4cf8-b410-f505214c0f4e" class=""><strong>Readers-Writers Problem: </strong>Use Semaphore</p><p id="a4557908-9bcc-4a37-a806-380f3da12d17" class=""><strong>Dining-Philosophers: </strong>Use Semaphore</p><p id="e4128bfc-17af-46b7-8dd3-b235ecae48bc" class="">
+</p><h3 id="4efd63d7-7a72-4807-b595-3cccb9d7d4b5" class="">Problems with semaphores</h3><p id="d01eaac5-0aba-4004-83a3-55ffd7b4f9bf" class="">Invalid use (order): Correct way → wait() CS signal()</p><p id="541ed0de-5f8a-4f0f-a68b-11d1f324550c" class="">Deadlocks can be happen</p><p id="2834d855-2b88-4181-9b20-d0507e4d4b09" class="">
+</p><ul id="260a2b20-a29f-4a7b-91d9-0fe5da3b01df" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-brown_background"><span style="border-bottom:0.05em solid"><strong>Monitor is the best solution for the synchronization </strong></span></mark></li></ul><p id="aaec2e56-e07b-4c16-8384-8a4f1d59f99f" class="">
+</p><p id="a284be15-c94d-48e8-a3e1-3080b0536abb" class="">©2023 Sathnindu Kottage</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
