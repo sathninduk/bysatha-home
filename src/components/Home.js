@@ -796,20 +796,20 @@ export default class Home extends Component {
                                              alt={"Dpacks Logo"}/>
                                     </div>
                                 </a>
-                                <a className={"col con-mid block-href"}
-                                   href={"https://github.com/radiofusion"} rel="noreferrer" target={"_blank"}>
-                                    <p className={"edition-name"}>Radiofusion Cyber Systems</p>
-                                    <p className={"edition-desc"}>Founder</p>
-                                    <div className={"logo-box"}>
-                                        <img className={"org-logos"}
-                                             src={"/img/homepage/logos/radiofusion_horizontal_black.png"}
-                                             alt={"Radiofusion Logo"}/>
-                                    </div>
-                                </a>
+                                {/*<a className={"col con-mid block-href"}*/}
+                                {/*   href={"https://github.com/radiofusion"} rel="noreferrer" target={"_blank"}>*/}
+                                {/*    <p className={"edition-name"}>Radiofusion Cyber Systems</p>*/}
+                                {/*    <p className={"edition-desc"}>Founder</p>*/}
+                                {/*    <div className={"logo-box"}>*/}
+                                {/*        <img className={"org-logos"}*/}
+                                {/*             src={"/img/homepage/logos/radiofusion_horizontal_black.png"}*/}
+                                {/*             alt={"Radiofusion Logo"}/>*/}
+                                {/*    </div>*/}
+                                {/*</a>*/}
                                 <a className={"col con-mid block-href"}
                                    href={"https://www.coduza.com"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>Coduza</p>
-                                    <p className={"edition-desc"}>Chief Developer, Tech Lead</p>
+                                    <p className={"edition-desc"}>Senior Software Engineer</p>
                                     <div className={"logo-box-coduza"}>
                                         <img className={"org-logos-coduza"} src={"/img/homepage/logos/coduza.png"}
                                              alt={"Coduza Logo"}/>
