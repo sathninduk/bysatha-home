@@ -279,7 +279,7 @@ export default class Home extends Component {
                                         </p>
                                     </div>
                                     <a className={"col con-mid research-block research-active block-href"}
-                                       href={"https://dpacks.space"} rel="noreferrer" target={"_blank"}>
+                                       href={"https://dpacks-nightly.vercel.app"} rel="noreferrer" target={"_blank"}>
                                         <div className={"research-badge research-badge-active"}>Production - Active
                                         </div>
                                         <p className={"edition-name"}>Dpacks Nightly</p>
@@ -782,6 +782,7 @@ export default class Home extends Component {
 
 
                         {/*  portfolio  */}
+                        {/*
                         <div className={"list-section"}>
                             <div className={"con-mid"}>
                                 <h1><span className={"panipuri"}><span>💼</span> portfolio</span></h1>
@@ -796,16 +797,16 @@ export default class Home extends Component {
                                              alt={"Dpacks Logo"}/>
                                     </div>
                                 </a>
-                                {/*<a className={"col con-mid block-href"}*/}
-                                {/*   href={"https://github.com/radiofusion"} rel="noreferrer" target={"_blank"}>*/}
-                                {/*    <p className={"edition-name"}>Radiofusion Cyber Systems</p>*/}
-                                {/*    <p className={"edition-desc"}>Founder</p>*/}
-                                {/*    <div className={"logo-box"}>*/}
-                                {/*        <img className={"org-logos"}*/}
-                                {/*             src={"/img/homepage/logos/radiofusion_horizontal_black.png"}*/}
-                                {/*             alt={"Radiofusion Logo"}/>*/}
-                                {/*    </div>*/}
-                                {/*</a>*/}
+                                <a className={"col con-mid block-href"}
+                                   href={"https://github.com/radiofusion"} rel="noreferrer" target={"_blank"}>
+                                    <p className={"edition-name"}>Radiofusion Cyber Systems</p>
+                                    <p className={"edition-desc"}>Founder</p>
+                                    <div className={"logo-box"}>
+                                        <img className={"org-logos"}
+                                             src={"/img/homepage/logos/radiofusion_horizontal_black.png"}
+                                             alt={"Radiofusion Logo"}/>
+                                    </div>
+                                </a>
                                 <a className={"col con-mid block-href"}
                                    href={"https://www.coduza.com"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>Coduza</p>
@@ -816,7 +817,7 @@ export default class Home extends Component {
                                     </div>
                                 </a>
                             </div>
-                        </div>
+                        </div>*/}
 
 
                         {/*  social  */}
