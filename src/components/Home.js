@@ -703,8 +703,8 @@ export default class Home extends Component {
                                     className={"neutro title-neutro-2"}>organizations</span></span></h1>
                             </div>
                             <div className={"row edition-list"}>
-                                <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/bysatha"} rel="noreferrer" target={"_blank"}>
+                                {/* <a className={"col con-mid research-block research-org block-href"}
+                                    href={"https://github.com/bysatha"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>by Satha</p>
                                     <p className={"edition-desc"}>Projects by Sathnindu Kottage</p>
@@ -720,9 +720,9 @@ export default class Home extends Component {
                                         </svg>
                                         &emsp;Organization
                                     </p>
-                                </a>
-                                <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/project-evilcodes"} rel="noreferrer" target={"_blank"}>
+                                </a> */}
+                                {/* <a className={"col con-mid research-block research-org block-href"}
+                                    href={"https://github.com/project-evilcodes"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>EvilCodes</p>
                                     <p className={"edition-desc"}>Cryptography and decentralized cyber space research
@@ -739,13 +739,66 @@ export default class Home extends Component {
                                         </svg>
                                         &emsp;Organization
                                     </p>
+                                </a> */}
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/dpacks-technology"} rel="noreferrer" target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>DPacks</p>
+                                    <p className={"edition-desc"}>Distributed and AI-powered static data technology and CMS</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
                                 </a>
                                 <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/radiofusion"} rel="noreferrer" target={"_blank"}>
+                                   href={"https://github.com/ms-club-sliit"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
-                                    <p className={"edition-name"}>Radiofusion Cyber Systems</p>
-                                    <p className={"edition-desc"}>Cyber space & security research organization based in
-                                        Colombo, Sri Lanka</p>
+                                    <p className={"edition-name"}>MS Club of SLIIT</p>
+                                    <p className={"edition-desc"}>A nonprofit organization and a student community based on SLIIT</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
+                                </a>
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/sliit-foss"} rel="noreferrer" target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>SLIIT FOSS Community</p>
+                                    <p className={"edition-desc"}>A team of volunteers who believe in the usage of Free/Open Source Software</p>
+                                    <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                        <svg
+                                            style={{marginTop: "-2px"}}
+                                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            height={"13"} width={"13"} fill={"#4f4f4f"}
+                                            data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                            <path
+                                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                        </svg>
+                                        &emsp;Organization
+                                    </p>
+                                </a>
+                                <a className={"col con-mid research-block research-org block-href"}
+                                   href={"https://github.com/code94labs"} rel="noreferrer" target={"_blank"}>
+                                    <div className={"research-badge research-badge-org"}>Organization</div>
+                                    <p className={"edition-name"}>Code94 Labs</p>
+                                    <p className={"edition-desc"}>Software Agency</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
