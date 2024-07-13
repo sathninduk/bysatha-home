@@ -794,8 +794,8 @@ export default class Home extends Component {
                                         &emsp;Organization
                                     </p>
                                 </a>
-                                <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/code94labs"} rel="noreferrer" target={"_blank"}>
+                                {/* <a className={"col con-mid research-block research-org block-href"}
+                                    href={"https://github.com/code94labs"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>Code94 Labs</p>
                                     <p className={"edition-desc"}>Software Agency</p>
@@ -811,7 +811,7 @@ export default class Home extends Component {
                                         </svg>
                                         &emsp;Organization
                                     </p>
-                                </a>
+                                </a> */}
                                 <a className={"col con-mid research-block research-org block-href"}
                                    href={"https://github.com/coduza"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
