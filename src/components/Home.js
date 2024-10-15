@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Helmet} from "react-helmet";
+import Experience from "./Experience";
 
 export default class Home extends Component {
     render() {
@@ -241,6 +242,163 @@ export default class Home extends Component {
                                 <h1><span className={"panipuri"}><span>🧪</span> research <span
                                     style={{color: "#000"}} className={"neutro title-neutro"}>projects</span></span>
                                 </h1>
+                            </div>
+
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project CyberUniversal (Resurrected)</h3>
+                                        <p>(2024)</p>
+                                        <div className={"row edition-list edition-list-special"}>
+                                            <a className={"col con-mid research-block research-active block-href"}
+                                               href={"https://dpacks.net"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-active"}>Production -
+                                                    Active
+                                                </div>
+                                                <p className={"edition-name"}>DPacks V2</p>
+                                                <p className={"edition-desc"}>The fastest headless HTTP technology & many more</p>
+                                                <p
+                                                    className={"edition-availability-badge edition-availability-badge-green"}>
+                                                    V 2.0.0 BETA
+                                                </p>
+                                            </a>
+                                            <a className={"col con-mid research-block research-active block-href"}
+                                               href={"https://github.com/dpacks-technology/dpacks-connector-js"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-active"}>Production -
+                                                    Active
+                                                </div>
+                                                <p className={"edition-name"}>DPacks V2 Connector</p>
+                                                <p className={"edition-desc"}>DPacks CMS connector and modifier script</p>
+                                                <p
+                                                    className={"edition-availability-badge edition-availability-badge-green"}>
+                                                    V 2.0.0 BETA
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project Verita</h3>
+                                        <p>(2024)</p>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/sathninduk/verita-fe"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>Verita</p>
+                                                <p className={"edition-desc"}>Software formal specification technology
+                                                    with a real-time tuning LLM</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project Aspire AI</h3>
+                                        <p>(2024)</p>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/sathninduk/aspire-ai-fe"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>Aspire AI</p>
+                                                <p className={"edition-desc"}>Career and skills enhancement AI powered
+                                                    by a guided user analysis algorithm</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project GoFlow</h3>
+                                        <p>(2023)</p>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/sathninduk/goflow"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>GoFlow</p>
+                                                <p className={"edition-desc"}>A Java-based transport management system
+                                                    with a location based-QR feature</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
+                                        <h3>Project Ceft</h3>
+                                        <p>(2023)</p>
+                                        <div className={"row edition-list"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/sathninduk/ceft"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>Open-Source</div>
+                                                <p className={"edition-name"}>Ceft</p>
+                                                <p className={"edition-desc"}>A fully functional online banking system
+                                                    for micro-banking.</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    <svg
+                                                        style={{marginTop: "-2px"}}
+                                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        height={"13"} width={"13"} fill={"#4f4f4f"}
+                                                        data-testid="GitHubIcon" tabIndex="-1" title="GitHub">
+                                                        <path
+                                                            d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+                                                    </svg>
+                                                    &emsp;Repository
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className={"project-list-section"}>
@@ -744,7 +902,8 @@ export default class Home extends Component {
                                    href={"https://github.com/dpacks-technology"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
                                     <p className={"edition-name"}>DPacks</p>
-                                    <p className={"edition-desc"}>Distributed and AI-powered static data technology and CMS</p>
+                                    <p className={"edition-desc"}>Distributed and AI-powered static data technology and
+                                        CMS</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
@@ -813,10 +972,10 @@ export default class Home extends Component {
                                     </p>
                                 </a> */}
                                 <a className={"col con-mid research-block research-org block-href"}
-                                   href={"https://github.com/coduza"} rel="noreferrer" target={"_blank"}>
+                                   href={"https://github.com/sliitsesc"} rel="noreferrer" target={"_blank"}>
                                     <div className={"research-badge research-badge-org"}>Organization</div>
-                                    <p className={"edition-name"}>Coduza</p>
-                                    <p className={"edition-desc"}>IT services provider based in Colombo, Sri Lanka</p>
+                                    <p className={"edition-name"}>SLIIT SESC</p>
+                                    <p className={"edition-desc"}>Software Engineering Student Community at SLIIT</p>
                                     <p className={"edition-availability-badge edition-availability-badge-red"}>
                                         <svg
                                             style={{marginTop: "-2px"}}
@@ -835,12 +994,12 @@ export default class Home extends Component {
 
 
                         {/*  portfolio  */}
-                        {/*
                         <div className={"list-section"}>
                             <div className={"con-mid"}>
-                                <h1><span className={"panipuri"}><span>💼</span> portfolio</span></h1>
+                                <h1><span className={"panipuri"}><span>💼</span> experience</span></h1>
                             </div>
-                            <div className={"row edition-list edition-list-2"}>
+                            <Experience/>
+                            {/* <div className={"row edition-list edition-list-2"}>
                                 <a className={"col con-mid block-href"}
                                    href={"https://dpacks.netlify.app/"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>Dpacks Technology</p>
@@ -869,8 +1028,8 @@ export default class Home extends Component {
                                              alt={"Coduza Logo"}/>
                                     </div>
                                 </a>
-                            </div>
-                        </div>*/}
+                            </div> */}
+                        </div>
 
 
                         {/*  social  */}
@@ -934,8 +1093,8 @@ export default class Home extends Component {
                                             d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
                                     </svg></a>
                                 </a>
-                                <a className={"col con-mid block-href"}
-                                   href={"https://www.hackerrank.com/sathnindu"} rel="noreferrer" target={"_blank"}>
+                                {/*<a className={"col con-mid block-href"}
+                                    href={"https://www.hackerrank.com/sathnindu"} rel="noreferrer" target={"_blank"}>
                                     <p className={"edition-name"}>HackerRank</p>
                                     <a href={"https://www.hackerrank.com/sathnindu"} rel="noreferrer"
                                        target={"_blank"}>Visit <svg
@@ -946,7 +1105,7 @@ export default class Home extends Component {
                                         <path
                                             d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path>
                                     </svg></a>
-                                </a>
+                                </a>*/}
                                 {/*<a className={"col con-mid block-href"}*/}
                                 {/*   href={"https://www.hackerearth.com/@sathnidukottage"} rel="noreferrer" target={"_blank"}>*/}
                                 {/*    <p className={"edition-name"}>HackerEarth</p>*/}
@@ -961,9 +1120,9 @@ export default class Home extends Component {
                                 {/*    </svg></a>*/}
                                 {/*</a>*/}
                                 <a className={"col con-mid block-href"}
-                                   href={"https://gitcoin.co/sathninduk"} rel="noreferrer" target={"_blank"}>
-                                    <p className={"edition-name"}>GitCoin</p>
-                                    <a href={"https://gitcoin.co/sathninduk"} rel="noreferrer"
+                                   href={"https://scholar.google.com/citations?user=kcLuuSEAAAAJ&hl=en"} rel="noreferrer" target={"_blank"}>
+                                    <p className={"edition-name"}>Google Scholar</p>
+                                    <a href={"https://scholar.google.com/citations?user=kcLuuSEAAAAJ&hl=en"} rel="noreferrer"
                                        target={"_blank"}>Visit <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="#5765f1"
@@ -980,11 +1139,10 @@ export default class Home extends Component {
                         {/*  Timeline  */}
                         <div className={"timeline-section con-mid"}>
                             <p>
-                                1000+ GitHub Contributions (2021-2022) 🐙
+                                3500+ GitHub Contributions (2023-2024) 🐙
                                 <br/>
-                                <a href={"https://skyline.github.com/sathninduk/2021"} rel="noreferrer"
-                                   target={"_blank"}>GitHub
-                                    Skyline <svg
+                                <a href={"https://github.com/sathninduk"} rel="noreferrer"
+                                   target={"_blank"}>GitHub <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170"
                                         focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill={"#5765f1"}
                                         height={"15"} width={"15"} data-testid="OpenInNewIcon"

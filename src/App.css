@@ -574,7 +574,9 @@ iframe .watermark {
 }
 
 .satha-planet {
-    width: 400px;
+    width: 300px;
+    transform: rotate(-7deg);
+    border-radius: 20px 120px 20px 20px;
 }
 
 .research {
