@@ -254,7 +254,7 @@ export default class Home extends Component {
                                                href={"https://github.com/sathninduk/ChatWithSQL"} rel="noreferrer"
                                                target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>
-                                                     Open-Source
+                                                    Open-Source
                                                 </div>
                                                 <p className={"edition-name"}>ChatWithSQL</p>
                                                 <p className={"edition-desc"}>The world's most secure and reliable
@@ -271,6 +271,16 @@ export default class Home extends Component {
                                                 </div>
                                                 <p className={"edition-name"}>ChatsAPI</p>
                                                 <p className={"edition-desc"}>Python Chat API Framework</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    Coming Soon
+                                                </p>
+                                            </div>
+                                            <div
+                                                className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                                <div className={"research-badge research-badge-up"}>Open-Source - Dev
+                                                </div>
+                                                <p className={"edition-name"}>ChatWithStruct</p>
+                                                <p className={"edition-desc"}>LLM response structuring Python library</p>
                                                 <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                     Coming Soon
                                                 </p>
