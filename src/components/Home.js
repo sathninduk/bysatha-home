@@ -247,6 +247,42 @@ export default class Home extends Component {
                             <div className={"row"}>
                                 <div className={"col"}>
                                     <div className={"project-list-section"}>
+                                        <h3>Project Chatsra (Open-Source AI)</h3>
+                                        <p>(2024-2025)</p>
+                                        <div className={"row edition-list edition-list-special"}>
+                                            <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/sathninduk/ChatWithSQL"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>
+                                                     Open-Source
+                                                </div>
+                                                <p className={"edition-name"}>ChatWithSQL</p>
+                                                <p className={"edition-desc"}>The world's most secure and reliable
+                                                    Python
+                                                    library for querying SQL databases through LLMs.</p>
+                                                <p
+                                                    className={"edition-availability-badge edition-availability-badge-green"}>
+                                                    V 0.1.3 (Pre-Release)
+                                                </p>
+                                            </a>
+                                            <div
+                                                className={"col con-mid research-block research-up block-href coming-soon-block"}>
+                                                <div className={"research-badge research-badge-up"}>Open-Source - Dev
+                                                </div>
+                                                <p className={"edition-name"}>ChatsAPI</p>
+                                                <p className={"edition-desc"}>Python Chat API Framework</p>
+                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
+                                                    Coming Soon
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <div className={"project-list-section"}>
                                         <h3>Project CyberUniversal (Resurrected)</h3>
                                         <p>(2024)</p>
                                         <div className={"row edition-list edition-list-special"}>
@@ -257,20 +293,23 @@ export default class Home extends Component {
                                                     Active
                                                 </div>
                                                 <p className={"edition-name"}>DPacks V2</p>
-                                                <p className={"edition-desc"}>The fastest headless HTTP technology & many more</p>
+                                                <p className={"edition-desc"}>The fastest headless HTTP technology &
+                                                    many more</p>
                                                 <p
                                                     className={"edition-availability-badge edition-availability-badge-green"}>
                                                     V 2.0.0 BETA
                                                 </p>
                                             </a>
                                             <a className={"col con-mid research-block research-active block-href"}
-                                               href={"https://github.com/dpacks-technology/dpacks-connector-js"} rel="noreferrer"
+                                               href={"https://github.com/dpacks-technology/dpacks-connector-js"}
+                                               rel="noreferrer"
                                                target={"_blank"}>
                                                 <div className={"research-badge research-badge-active"}>Production -
                                                     Active
                                                 </div>
                                                 <p className={"edition-name"}>DPacks V2 Connector</p>
-                                                <p className={"edition-desc"}>DPacks CMS connector and modifier script</p>
+                                                <p className={"edition-desc"}>DPacks CMS connector and modifier
+                                                    script</p>
                                                 <p
                                                     className={"edition-availability-badge edition-availability-badge-green"}>
                                                     V 2.0.0 BETA
