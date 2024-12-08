@@ -251,6 +251,19 @@ export default class Home extends Component {
                                         <p>(2024-2025)</p>
                                         <div className={"row edition-list edition-list-special"}>
                                             <a className={"col con-mid research-block research-open block-href"}
+                                               href={"https://github.com/chatsapi/ChatsAPI"} rel="noreferrer"
+                                               target={"_blank"}>
+                                                <div className={"research-badge research-badge-open"}>
+                                                    Open-Source
+                                                </div>
+                                                <p className={"edition-name"}>ChatsAPI</p>
+                                                <p className={"edition-desc"}>A High-Performance AI Agent Framework based on SBERT & SpaCy</p>
+                                                <p
+                                                    className={"edition-availability-badge edition-availability-badge-green"}>
+                                                    V 0.1.0 (Pre-Release)
+                                                </p>
+                                            </a>
+                                            <a className={"col con-mid research-block research-open block-href"}
                                                href={"https://github.com/sathninduk/ChatWithSQL"} rel="noreferrer"
                                                target={"_blank"}>
                                                 <div className={"research-badge research-badge-open"}>
@@ -269,18 +282,9 @@ export default class Home extends Component {
                                                 className={"col con-mid research-block research-up block-href coming-soon-block"}>
                                                 <div className={"research-badge research-badge-up"}>Open-Source - Dev
                                                 </div>
-                                                <p className={"edition-name"}>ChatsAPI</p>
-                                                <p className={"edition-desc"}>Python Chat API Framework</p>
-                                                <p className={"edition-availability-badge edition-availability-badge-red"}>
-                                                    Coming Soon
-                                                </p>
-                                            </div>
-                                            <div
-                                                className={"col con-mid research-block research-up block-href coming-soon-block"}>
-                                                <div className={"research-badge research-badge-up"}>Open-Source - Dev
-                                                </div>
                                                 <p className={"edition-name"}>ChatWithStruct</p>
-                                                <p className={"edition-desc"}>LLM response structuring Python library</p>
+                                                <p className={"edition-desc"}>LLM response structuring Python
+                                                    library</p>
                                                 <p className={"edition-availability-badge edition-availability-badge-red"}>
                                                     Coming Soon
                                                 </p>
