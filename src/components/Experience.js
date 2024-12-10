@@ -3,6 +3,12 @@ import './Experience.css';
 
 const experiences = [
   {
+    title: "Software Engineer II",
+    company: "Arimac",
+    duration: "Dec 2024 - Present",
+    logo: "/img/logos/arimac.jpeg"
+  },
+  {
     title: "Industry Cell Trainee",
     company: "CodeGen International",
     duration: "Aug 2024 - Oct 2024 · 3 mos",
